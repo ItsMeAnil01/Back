@@ -10,9 +10,10 @@ import logging
 import os
 from typing import Tuple
 
+# Set up logging
 logging.basicConfig(
     filename='train_model.log',
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -23,16 +24,19 @@ EXPECTED_FEATURES = [
 ]
 
 def load_and_clean_data(file_path: str) -> pd.DataFrame:
+    print(f"Loading data from {file_path}")
+    logger.debug(f"Attempting to load data from {file_path}")
     try:
         if not os.path.exists(file_path):
             logger.error(f"Dataset file not found: {file_path}")
             raise FileNotFoundError(f"Dataset file not found: {file_path}")
         data = pd.read_csv(file_path)
         logger.info(f"Loaded dataset with {len(data)} rows and {len(data.columns)} columns")
+        print(f"Loaded dataset with {len(data)} rows")
         missing_features = [f for f in EXPECTED_FEATURES if f not in data.columns]
         if missing_features:
             logger.error(f"Missing features in dataset: {missing_features}")
-            raise ValueError(f"Dataset missing features: {missing_features}")
+            raise ValueError(f"Missing features: {missing_features}")
         if 'target' not in data.columns:
             logger.error("Target column 'target' not found in dataset")
             raise ValueError("Target column 'target' not found in dataset")
@@ -48,9 +52,12 @@ def load_and_clean_data(file_path: str) -> pd.DataFrame:
         return data
     except Exception as e:
         logger.error(f"Failed to load and clean data: {str(e)}")
+        print(f"Error loading data: {str(e)}")
         raise
 
 def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
+    print("Starting model training")
+    logger.debug("Starting model training")
     try:
         X = data[EXPECTED_FEATURES]
         y = data['target']
@@ -58,6 +65,7 @@ def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
         smote = SMOTE(sampling_strategy='auto', random_state=72)
         X_resampled, y_resampled = smote.fit_resample(X, y)
         logger.info(f"Applied SMOTE: {len(X_resampled)} samples after resampling")
+        print(f"SMOTE applied: {len(X_resampled)} samples")
         X_train, X_test, y_train, y_test = train_test_split(
             X_resampled, y_resampled, test_size=0.2, random_state=72
         )
@@ -79,9 +87,12 @@ def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
         grid_search = GridSearchCV(
             xgb, param_grid=param_grid, cv=15, scoring='accuracy', n_jobs=-1
         )
+        logger.debug("Starting GridSearchCV")
+        print("Running GridSearchCV...")
         grid_search.fit(X_train_scaled, y_train)
         best_model = grid_search.best_estimator_
         logger.info(f"Best hyperparameters: {grid_search.best_params_}")
+        print(f"Best hyperparameters: {grid_search.best_params_}")
         y_train_pred = best_model.predict(X_train_scaled)
         train_accuracy = accuracy_score(y_train, y_train_pred)
         y_test_pred = best_model.predict(X_test_scaled)
@@ -90,25 +101,35 @@ def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
         logger.info(f"Train Accuracy: {train_accuracy * 100:.2f}%")
         logger.info(f"Test Accuracy: {test_accuracy * 100:.2f}%")
         logger.info(f"Classification Report:\n{report}")
+        print(f"Train Accuracy: {train_accuracy * 100:.2f}%")
+        print(f"Test Accuracy: {test_accuracy * 100:.2f}%")
         feature_importance = pd.Series(best_model.feature_importances_, index=EXPECTED_FEATURES)
         logger.info(f"Feature Importance:\n{feature_importance.sort_values(ascending=False)}")
+        logger.debug("Model training completed")
+        print("Model training completed")
         return best_model, scaler
     except Exception as e:
         logger.error(f"Failed to train model: {str(e)}")
+        print(f"Error training model: {str(e)}")
         raise
 
 def main():
+    print("Starting train_model.py")
+    logger.debug("Starting main function")
     try:
         if ' ' in os.getcwd():
             logger.warning(f"Project directory contains spaces: {os.getcwd()}")
+            print(f"Warning: Project directory contains spaces: {os.getcwd()}")
         data = load_and_clean_data('synthetic_heart.csv')
         model, scaler = train_model(data)
         model.version = "1.0.0"
         joblib.dump(model, 'heart_attack_model.pkl')
         joblib.dump(scaler, 'scaler.pkl')
         logger.info("Saved model and scaler to heart_attack_model.pkl and scaler.pkl")
+        print("Saved model and scaler to heart_attack_model.pkl and scaler.pkl")
     except Exception as e:
         logger.error(f"Training failed: {str(e)}")
+        print(f"Training failed: {str(e)}")
         raise
 
 if __name__ == '__main__':
