@@ -2,13 +2,15 @@ import joblib
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
 import logging
 import os
-from typing import Tuple
+from typing import Tuple, Any
 
 # Set up logging
 logging.basicConfig(
@@ -55,7 +57,7 @@ def load_and_clean_data(file_path: str) -> pd.DataFrame:
         print(f"Error loading data: {str(e)}")
         raise
 
-def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
+def train_model(data: pd.DataFrame) -> Tuple[Any, StandardScaler]:
     print("Starting model training")
     logger.debug("Starting model training")
     try:
@@ -70,43 +72,80 @@ def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
             X_resampled, y_resampled, test_size=0.2, random_state=72
         )
         logger.info(f"Train set: {len(X_train)} samples, Test set: {len(X_test)} samples")
+
+        # Apply scaling
         scaler = StandardScaler()
         X_train_scaled = scaler.fit_transform(X_train)
         X_test_scaled = scaler.transform(X_test)
         logger.info("Applied StandardScaler to features")
-        param_grid = {
-            'n_estimators': [100, 200, 300],
-            'max_depth': [3, 5, 7, 9],
-            'learning_rate': [0.01, 0.05, 0.1],
-            'subsample': [0.7, 0.8, 0.9, 1.0],
-            'colsample_bytree': [0.7, 0.8, 0.9, 1.0],
-            'gamma': [0, 0.1, 0.2],
-            'reg_lambda': [0.5, 1, 2]
+
+        # Define models and parameter grids
+        models = {
+            'RandomForest': {
+                'model': RandomForestClassifier(random_state=72),
+                'param_grid': {
+                    'n_estimators': [100, 200, 300],
+                    'max_depth': [None, 10, 20],
+                    'min_samples_split': [2, 5],
+                    'min_samples_leaf': [1, 2]
+                }
+            },
+            'XGBoost': {
+                'model': XGBClassifier(random_state=72, eval_metric='logloss'),
+                'param_grid': {
+                    'n_estimators': [100, 200, 300],
+                    'max_depth': [3, 5, 7],
+                    'learning_rate': [0.01, 0.05, 0.1],
+                    'subsample': [0.7, 0.8, 0.9],
+                    'colsample_bytree': [0.7, 0.8, 0.9]
+                }
+            },
+            'LogisticRegression': {
+                'model': LogisticRegression(random_state=72, max_iter=1000),
+                'param_grid': {
+                    'C': [0.1, 1, 10],
+                    'solver': ['lbfgs', 'liblinear']
+                }
+            }
         }
-        xgb = XGBClassifier(random_state=72, eval_metric='logloss')
-        grid_search = GridSearchCV(
-            xgb, param_grid=param_grid, cv=15, scoring='accuracy', n_jobs=-1
-        )
-        logger.debug("Starting GridSearchCV")
-        print("Running GridSearchCV...")
-        grid_search.fit(X_train_scaled, y_train)
-        best_model = grid_search.best_estimator_
-        logger.info(f"Best hyperparameters: {grid_search.best_params_}")
-        print(f"Best hyperparameters: {grid_search.best_params_}")
-        y_train_pred = best_model.predict(X_train_scaled)
-        train_accuracy = accuracy_score(y_train, y_train_pred)
-        y_test_pred = best_model.predict(X_test_scaled)
-        test_accuracy = accuracy_score(y_test, y_test_pred)
-        report = classification_report(y_test, y_test_pred)
-        logger.info(f"Train Accuracy: {train_accuracy * 100:.2f}%")
-        logger.info(f"Test Accuracy: {test_accuracy * 100:.2f}%")
-        logger.info(f"Classification Report:\n{report}")
-        print(f"Train Accuracy: {train_accuracy * 100:.2f}%")
-        print(f"Test Accuracy: {test_accuracy * 100:.2f}%")
-        feature_importance = pd.Series(best_model.feature_importances_, index=EXPECTED_FEATURES)
-        logger.info(f"Feature Importance:\n{feature_importance.sort_values(ascending=False)}")
-        logger.debug("Model training completed")
-        print("Model training completed")
+
+        best_model = None
+        best_accuracy = 0
+        best_model_name = ''
+
+        # Train and evaluate each model
+        for name, config in models.items():
+            print(f"Training {name}...")
+            logger.debug(f"Starting GridSearchCV for {name}")
+            grid_search = GridSearchCV(
+                config['model'],
+                config['param_grid'],
+                cv=5,
+                scoring='accuracy',
+                n_jobs=-1,
+                verbose=1
+            )
+            grid_search.fit(X_train_scaled, y_train)
+            model = grid_search.best_estimator_
+            logger.info(f"Best hyperparameters for {name}: {grid_search.best_params_}")
+            print(f"Best hyperparameters for {name}: {grid_search.best_params_}")
+
+            # Evaluate on test set
+            y_test_pred = model.predict(X_test_scaled)
+            test_accuracy = accuracy_score(y_test, y_test_pred)
+            report = classification_report(y_test, y_test_pred)
+            logger.info(f"{name} Test Accuracy: {test_accuracy * 100:.2f}%")
+            logger.info(f"{name} Classification Report:\n{report}")
+            print(f"{name} Test Accuracy: {test_accuracy * 100:.2f}%")
+
+            # Update best model
+            if test_accuracy > best_accuracy:
+                best_accuracy = test_accuracy
+                best_model = model
+                best_model_name = name
+
+        logger.info(f"Best model: {best_model_name} with accuracy {best_accuracy * 100:.2f}%")
+        print(f"Best model: {best_model_name} with accuracy {best_accuracy * 100:.2f}%")
         return best_model, scaler
     except Exception as e:
         logger.error(f"Failed to train model: {str(e)}")
@@ -120,7 +159,7 @@ def main():
         if ' ' in os.getcwd():
             logger.warning(f"Project directory contains spaces: {os.getcwd()}")
             print(f"Warning: Project directory contains spaces: {os.getcwd()}")
-        data = load_and_clean_data('synthetic_heart.csv')
+        data = load_and_clean_data('heart.csv')
         model, scaler = train_model(data)
         model.version = "1.0.0"
         joblib.dump(model, 'heart_attack_model.pkl')
