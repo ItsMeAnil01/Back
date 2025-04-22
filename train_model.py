@@ -67,17 +67,17 @@ def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
         X_test_scaled = scaler.transform(X_test)
         logger.info("Applied StandardScaler to features")
         param_grid = {
-            'n_estimators': [100, 200],
-            'max_depth': [3, 5, 7],
-            'learning_rate': [0.01, 0.1],
-            'subsample': [0.8, 1.0],
-            'colsample_bytree': [0.8, 1.0],
-            'gamma': [0, 0.1],
-            'reg_lambda': [1, 2]
+            'n_estimators': [100, 200, 300],
+            'max_depth': [3, 5, 7, 9],
+            'learning_rate': [0.01, 0.05, 0.1],
+            'subsample': [0.7, 0.8, 0.9, 1.0],
+            'colsample_bytree': [0.7, 0.8, 0.9, 1.0],
+            'gamma': [0, 0.1, 0.2],
+            'reg_lambda': [0.5, 1, 2]
         }
         xgb = XGBClassifier(random_state=72, eval_metric='logloss')
         grid_search = GridSearchCV(
-            xgb, param_grid=param_grid, cv=10, scoring='accuracy', n_jobs=-1
+            xgb, param_grid=param_grid, cv=15, scoring='accuracy', n_jobs=-1
         )
         grid_search.fit(X_train_scaled, y_train)
         best_model = grid_search.best_estimator_
@@ -90,6 +90,8 @@ def train_model(data: pd.DataFrame) -> Tuple[XGBClassifier, StandardScaler]:
         logger.info(f"Train Accuracy: {train_accuracy * 100:.2f}%")
         logger.info(f"Test Accuracy: {test_accuracy * 100:.2f}%")
         logger.info(f"Classification Report:\n{report}")
+        feature_importance = pd.Series(best_model.feature_importances_, index=EXPECTED_FEATURES)
+        logger.info(f"Feature Importance:\n{feature_importance.sort_values(ascending=False)}")
         return best_model, scaler
     except Exception as e:
         logger.error(f"Failed to train model: {str(e)}")
@@ -99,7 +101,7 @@ def main():
     try:
         if ' ' in os.getcwd():
             logger.warning(f"Project directory contains spaces: {os.getcwd()}")
-        data = load_and_clean_data('heart.csv')
+        data = load_and_clean_data('synthetic_heart.csv')
         model, scaler = train_model(data)
         model.version = "1.0.0"
         joblib.dump(model, 'heart_attack_model.pkl')
