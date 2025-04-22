@@ -1,0 +1,609 @@
+2025-04-20 08:57:00,280 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-20 08:57:00,287 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-20 08:57:00,298 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-20 08:57:00,302 - INFO - Imputed missing values with mean
+2025-04-20 08:57:00,342 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-20 08:57:00,347 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-20 08:57:00,347 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-20 08:57:00,354 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-20 08:57:00,358 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-20 08:57:00,360 - INFO - Applied StandardScaler to features
+2025-04-20 08:57:07,289 - INFO - Best hyperparameters: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 15, 'learning_rate': 0.2, 'colsample_bytree': 0.7}
+2025-04-20 08:57:07,322 - INFO - Train Accuracy: 100.00%
+2025-04-20 08:57:07,322 - INFO - Test Accuracy: 89.39%
+2025-04-20 08:57:07,322 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.96      0.89        28
+           1       0.97      0.84      0.90        38
+
+    accuracy                           0.89        66
+   macro avg       0.89      0.90      0.89        66
+weighted avg       0.91      0.89      0.89        66
+
+2025-04-20 08:57:07,331 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-20 08:58:45,562 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-20 08:58:45,577 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-20 08:58:45,582 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-20 08:58:45,590 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-20 08:58:45,600 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-20 08:58:45,650 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-20 08:58:45,652 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-20 08:58:45,654 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-20 08:58:45,661 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-20 08:58:45,665 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-20 08:58:45,669 - INFO - Applied StandardScaler to features
+2025-04-20 08:58:52,592 - INFO - Best hyperparameters: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 15, 'learning_rate': 0.2, 'colsample_bytree': 0.7}
+2025-04-20 08:58:52,607 - INFO - Train Accuracy: 100.00%
+2025-04-20 08:58:52,607 - INFO - Test Accuracy: 89.39%
+2025-04-20 08:58:52,607 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.96      0.89        28
+           1       0.97      0.84      0.90        38
+
+    accuracy                           0.89        66
+   macro avg       0.89      0.90      0.89        66
+weighted avg       0.91      0.89      0.89        66
+
+2025-04-20 08:58:52,612 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-20 09:02:24,399 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-20 09:02:24,403 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-20 09:02:24,404 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-20 09:02:24,406 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-20 09:02:24,412 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-20 09:02:24,432 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-20 09:02:24,432 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-20 09:02:24,433 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-20 09:02:24,439 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-20 09:02:24,441 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-20 09:02:24,444 - INFO - Applied StandardScaler to features
+2025-04-20 09:02:30,111 - INFO - Best hyperparameters: {'subsample': 0.7, 'n_estimators': 100, 'max_depth': 15, 'learning_rate': 0.2, 'colsample_bytree': 0.7}
+2025-04-20 09:02:30,120 - INFO - Train Accuracy: 100.00%
+2025-04-20 09:02:30,120 - INFO - Test Accuracy: 89.39%
+2025-04-20 09:02:30,120 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.96      0.89        28
+           1       0.97      0.84      0.90        38
+
+    accuracy                           0.89        66
+   macro avg       0.89      0.90      0.89        66
+weighted avg       0.91      0.89      0.89        66
+
+2025-04-20 09:02:30,124 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 17:06:53,391 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 17:06:53,444 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 17:06:53,454 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 17:06:53,473 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:06:53,499 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:06:53,637 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 17:06:53,644 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 17:06:53,647 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 17:06:53,665 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 17:06:53,676 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 17:06:53,685 - INFO - Applied StandardScaler to features
+2025-04-22 17:07:02,226 - ERROR - Failed to train model: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:07:02,226 - ERROR - Training failed: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:08:34,876 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 17:08:34,886 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 17:08:34,887 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 17:08:34,891 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:08:34,905 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:08:34,967 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 17:08:34,968 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 17:08:34,969 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 17:08:34,978 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 17:08:34,981 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 17:08:34,986 - INFO - Applied StandardScaler to features
+2025-04-22 17:08:40,044 - ERROR - Failed to train model: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:08:40,044 - ERROR - Training failed: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:10:00,194 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 17:10:00,202 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 17:10:00,203 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 17:10:00,204 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:10:00,211 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:10:00,245 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 17:10:00,246 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 17:10:00,247 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 17:10:00,255 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 17:10:00,257 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 17:10:00,260 - INFO - Applied StandardScaler to features
+2025-04-22 17:10:08,395 - ERROR - Failed to train model: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:10:08,396 - ERROR - Training failed: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:11:28,951 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 17:11:28,957 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 17:11:28,958 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 17:11:28,960 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:11:28,968 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:11:28,992 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 17:11:28,993 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 17:11:28,994 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 17:11:28,999 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 17:11:29,000 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 17:11:29,003 - INFO - Applied StandardScaler to features
+2025-04-22 17:11:33,207 - ERROR - Failed to train model: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:11:33,207 - ERROR - Training failed: 
+All the 1920 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+1920 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anil2\AppData\Local\Programs\Python\Python313\Lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+2025-04-22 17:13:00,137 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 17:13:00,143 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 17:13:00,144 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 17:13:00,146 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:13:00,156 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 17:13:00,183 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 17:13:00,184 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 17:13:00,185 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 17:13:00,190 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 17:13:00,192 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 17:13:00,196 - INFO - Applied StandardScaler to features
+2025-04-22 17:13:20,594 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-04-22 17:13:20,613 - INFO - Train Accuracy: 96.97%
+2025-04-22 17:13:20,613 - INFO - Test Accuracy: 87.88%
+2025-04-22 17:13:20,613 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-22 17:13:20,621 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 18:28:48,077 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 18:28:48,078 - ERROR - Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:28:48,078 - ERROR - Failed to load and clean data: Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:28:48,078 - ERROR - Training failed: Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:36:39,940 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 18:36:39,941 - ERROR - Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:36:39,941 - ERROR - Failed to load and clean data: Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:36:39,941 - ERROR - Training failed: Dataset file not found: HeartDiseaseRiskAssessment.csv

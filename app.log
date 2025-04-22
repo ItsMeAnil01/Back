@@ -1,0 +1,185 @@
+2025-04-20 08:51:21,238 - INFO - Model and scaler loaded successfully
+2025-04-20 08:51:21,327 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.13:5000
+2025-04-20 08:51:21,327 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-20 08:51:21,332 - INFO -  * Restarting with stat
+2025-04-20 08:51:23,799 - INFO - Model and scaler loaded successfully
+2025-04-20 08:51:23,824 - WARNING -  * Debugger is active!
+2025-04-20 08:51:23,828 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 08:52:57,676 - INFO - 127.0.0.1 - - [20/Apr/2025 08:52:57] "GET /health HTTP/1.1" 200 -
+2025-04-20 08:52:58,053 - INFO - 127.0.0.1 - - [20/Apr/2025 08:52:58] "GET /health HTTP/1.1" 200 -
+2025-04-20 08:52:59,746 - INFO - 127.0.0.1 - - [20/Apr/2025 08:52:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-20 08:54:41,121 - INFO - Model and scaler loaded successfully
+2025-04-20 08:54:41,197 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.13:5000
+2025-04-20 08:54:41,197 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-20 08:54:41,201 - INFO -  * Restarting with stat
+2025-04-20 08:54:43,795 - INFO - Model and scaler loaded successfully
+2025-04-20 08:54:43,813 - WARNING -  * Debugger is active!
+2025-04-20 08:54:43,815 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 08:56:55,675 - INFO -  * Detected change in 'D:\\Ip @\\model_training.py', reloading
+2025-04-20 08:56:56,146 - INFO -  * Restarting with stat
+2025-04-20 08:56:58,307 - INFO - Model and scaler loaded successfully
+2025-04-20 08:56:58,345 - WARNING -  * Debugger is active!
+2025-04-20 08:56:58,349 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 08:57:42,645 - INFO - Model and scaler loaded successfully
+2025-04-20 08:57:42,682 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.13:5000
+2025-04-20 08:57:42,682 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-20 08:57:42,684 - INFO -  * Restarting with stat
+2025-04-20 08:57:45,040 - INFO - Model and scaler loaded successfully
+2025-04-20 08:57:45,060 - WARNING -  * Debugger is active!
+2025-04-20 08:57:45,063 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 08:58:43,189 - INFO -  * Detected change in 'D:\\Ip @\\train_model.py', reloading
+2025-04-20 08:58:43,269 - INFO -  * Detected change in 'D:\\Ip @\\train_model.py', reloading
+2025-04-20 08:58:43,591 - INFO -  * Restarting with stat
+2025-04-20 08:58:43,631 - INFO -  * Restarting with stat
+2025-04-20 08:58:45,607 - INFO - Model and scaler loaded successfully
+2025-04-20 08:58:45,631 - WARNING -  * Debugger is active!
+2025-04-20 08:58:45,635 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 08:58:45,663 - INFO - Model and scaler loaded successfully
+2025-04-20 08:58:45,690 - WARNING -  * Debugger is active!
+2025-04-20 08:58:45,694 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 09:02:15,041 - INFO -  * Detected change in 'D:\\Ip @\\model_training.py', reloading
+2025-04-20 09:02:15,112 - INFO -  * Detected change in 'D:\\Ip @\\model_training.py', reloading
+2025-04-20 09:02:15,426 - INFO -  * Restarting with stat
+2025-04-20 09:02:15,443 - INFO -  * Restarting with stat
+2025-04-20 09:02:17,625 - ERROR - Failed to load model or scaler: 
+2025-04-20 09:02:17,625 - ERROR - Failed to load model or scaler: 
+2025-04-20 09:02:38,385 - INFO - Model and scaler loaded successfully
+2025-04-20 09:02:38,426 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.13:5000
+2025-04-20 09:02:38,427 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-20 09:02:38,429 - INFO -  * Restarting with stat
+2025-04-20 09:02:40,480 - INFO - Model and scaler loaded successfully
+2025-04-20 09:02:40,495 - WARNING -  * Debugger is active!
+2025-04-20 09:02:40,501 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 09:04:50,412 - INFO - Model and scaler loaded successfully
+2025-04-20 09:04:50,414 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-20 09:04:50,452 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-20 09:04:50,452 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-20 09:04:50,454 - INFO -  * Restarting with stat
+2025-04-20 09:04:52,388 - INFO - Model and scaler loaded successfully
+2025-04-20 09:04:52,390 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-20 09:04:52,404 - WARNING -  * Debugger is active!
+2025-04-20 09:04:52,409 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 09:04:55,576 - INFO - 127.0.0.1 - - [20/Apr/2025 09:04:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 09:04:55,585 - INFO - 127.0.0.1 - - [20/Apr/2025 09:04:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 09:04:57,224 - INFO - 127.0.0.1 - - [20/Apr/2025 09:04:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-20 09:04:57,231 - INFO - 127.0.0.1 - - [20/Apr/2025 09:04:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-20 09:08:16,872 - INFO - Model and scaler loaded successfully
+2025-04-20 09:08:16,873 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-20 09:08:16,907 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-20 09:08:16,907 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-20 09:08:16,909 - INFO -  * Restarting with stat
+2025-04-20 09:08:19,502 - INFO - Model and scaler loaded successfully
+2025-04-20 09:08:19,503 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-20 09:08:19,518 - WARNING -  * Debugger is active!
+2025-04-20 09:08:19,521 - INFO -  * Debugger PIN: 139-950-080
+2025-04-20 09:08:31,033 - INFO - 127.0.0.1 - - [20/Apr/2025 09:08:31] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-20 09:08:31,943 - INFO - 127.0.0.1 - - [20/Apr/2025 09:08:31] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-22 17:05:24,057 - INFO - Model and scaler loaded successfully
+2025-04-22 17:05:24,059 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:05:24,114 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 17:05:24,114 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 17:05:24,119 - INFO -  * Restarting with stat
+2025-04-22 17:05:27,163 - INFO - Model and scaler loaded successfully
+2025-04-22 17:05:27,165 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:05:27,190 - WARNING -  * Debugger is active!
+2025-04-22 17:05:27,195 - INFO -  * Debugger PIN: 139-950-080
+2025-04-22 17:06:14,314 - INFO - Model and scaler loaded successfully
+2025-04-22 17:06:14,319 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:06:14,371 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 17:06:14,371 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 17:06:14,375 - INFO -  * Restarting with stat
+2025-04-22 17:06:17,627 - INFO - Model and scaler loaded successfully
+2025-04-22 17:06:17,629 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:06:17,646 - WARNING -  * Debugger is active!
+2025-04-22 17:06:17,649 - INFO -  * Debugger PIN: 139-950-080
+2025-04-22 17:06:18,133 - INFO - Accessed root endpoint
+2025-04-22 17:06:18,134 - INFO - 127.0.0.1 - - [22/Apr/2025 17:06:18] "GET / HTTP/1.1" 200 -
+2025-04-22 17:06:18,140 - INFO - Accessed root endpoint
+2025-04-22 17:06:18,143 - INFO - 127.0.0.1 - - [22/Apr/2025 17:06:18] "GET / HTTP/1.1" 200 -
+2025-04-22 17:06:18,202 - WARNING - Favicon not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-22 17:06:18,202 - INFO - 127.0.0.1 - - [22/Apr/2025 17:06:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 17:06:18,210 - WARNING - Favicon not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-22 17:06:18,212 - INFO - 127.0.0.1 - - [22/Apr/2025 17:06:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 17:06:46,317 - INFO -  * Detected change in 'D:\\Ip @\\train_model.py', reloading
+2025-04-22 17:06:46,609 - INFO -  * Restarting with stat
+2025-04-22 17:06:50,198 - INFO - Model and scaler loaded successfully
+2025-04-22 17:06:50,201 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:06:50,223 - WARNING -  * Debugger is active!
+2025-04-22 17:06:50,228 - INFO -  * Debugger PIN: 139-950-080
+2025-04-22 17:08:06,771 - INFO -  * Detected change in 'D:\\Ip @\\app.py', reloading
+2025-04-22 17:08:07,167 - INFO -  * Restarting with stat
+2025-04-22 17:08:13,124 - ERROR - Failed to load model or scaler: Incompatible model version: expected 1.0.0, got unknown
+2025-04-22 17:08:36,322 - ERROR - Failed to load model or scaler: Incompatible model version: expected 1.0.0, got unknown
+2025-04-22 17:12:25,970 - WARNING - Incompatible model version: expected 1.0.0, got unknown. Proceeding with caution.
+2025-04-22 17:12:25,970 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: unknown
+2025-04-22 17:12:25,972 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:12:26,048 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 17:12:26,048 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 17:12:26,051 - INFO -  * Restarting with stat
+2025-04-22 17:12:29,270 - WARNING - Incompatible model version: expected 1.0.0, got unknown. Proceeding with caution.
+2025-04-22 17:12:29,271 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: unknown
+2025-04-22 17:12:29,275 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:12:29,303 - WARNING -  * Debugger is active!
+2025-04-22 17:12:29,307 - INFO -  * Debugger PIN: 139-950-080
+2025-04-22 17:12:30,169 - INFO - Accessed root endpoint
+2025-04-22 17:12:30,171 - INFO - 127.0.0.1 - - [22/Apr/2025 17:12:30] "GET / HTTP/1.1" 200 -
+2025-04-22 17:12:31,176 - INFO - Accessed root endpoint
+2025-04-22 17:12:31,176 - INFO - 127.0.0.1 - - [22/Apr/2025 17:12:31] "GET / HTTP/1.1" 200 -
+2025-04-22 17:12:38,637 - INFO - Accessed root endpoint
+2025-04-22 17:12:38,638 - INFO - 127.0.0.1 - - [22/Apr/2025 17:12:38] "GET / HTTP/1.1" 200 -
+2025-04-22 17:12:57,348 - INFO -  * Detected change in 'D:\\Ip @\\train_model.py', reloading
+2025-04-22 17:12:57,639 - INFO -  * Restarting with stat
+2025-04-22 17:13:01,170 - WARNING - Incompatible model version: expected 1.0.0, got unknown. Proceeding with caution.
+2025-04-22 17:13:01,171 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: unknown
+2025-04-22 17:13:01,173 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 17:13:01,227 - WARNING -  * Debugger is active!
+2025-04-22 17:13:01,231 - INFO -  * Debugger PIN: 139-950-080
+2025-04-22 17:29:14,814 - INFO - 127.0.0.1 - - [22/Apr/2025 17:29:14] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-04-22 18:28:03,479 - INFO -  * Detected change in 'D:\\Ip @\\app.py', reloading
+2025-04-22 18:28:04,664 - INFO -  * Restarting with stat
+2025-04-22 18:28:21,022 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: 1.0.0
+2025-04-22 18:28:21,026 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 18:28:21,057 - WARNING -  * Debugger is active!
+2025-04-22 18:28:21,061 - INFO -  * Debugger PIN: 139-950-080
+2025-04-22 18:28:39,815 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: 1.0.0
+2025-04-22 18:28:39,817 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 18:28:39,849 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 18:28:39,850 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 18:28:39,852 - INFO -  * Restarting with stat
+2025-04-22 18:28:42,180 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: 1.0.0
+2025-04-22 18:28:42,182 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 18:28:42,201 - WARNING -  * Debugger is active!
+2025-04-22 18:28:42,204 - INFO -  * Debugger PIN: 139-950-080
+2025-04-22 18:28:46,349 - INFO - 127.0.0.1 - - [22/Apr/2025 18:28:46] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-04-22 18:28:48,811 - INFO - Accessed root endpoint
+2025-04-22 18:28:48,812 - INFO - 127.0.0.1 - - [22/Apr/2025 18:28:48] "GET / HTTP/1.1" 200 -
+2025-04-22 18:34:57,952 - INFO - Accessed root endpoint
+2025-04-22 18:34:57,953 - INFO - 127.0.0.1 - - [22/Apr/2025 18:34:57] "GET / HTTP/1.1" 200 -
+2025-04-22 18:36:19,976 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: 1.0.0
+2025-04-22 18:36:19,978 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 18:36:20,019 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 18:36:20,019 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 18:36:20,021 - INFO -  * Restarting with stat
+2025-04-22 18:36:22,357 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: 1.0.0
+2025-04-22 18:36:22,359 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-04-22 18:36:22,384 - WARNING -  * Debugger is active!
+2025-04-22 18:36:22,389 - INFO -  * Debugger PIN: 139-950-080
