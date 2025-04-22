@@ -57,17 +57,29 @@ def load_and_clean_data(file_path: str) -> pd.DataFrame:
         print(f"Error loading data: {str(e)}")
         raise
 
-def train_model(data: pd.DataFrame) -> Tuple[Any, StandardScaler]:
+def train_model(data: pd.DataFrame) -> Tuple[Any, StandardScaler, List[str]]:
     print("Starting model training")
     logger.debug("Starting model training")
     try:
         X = data[EXPECTED_FEATURES]
         y = data['target']
         logger.info(f"Using features: {EXPECTED_FEATURES}")
+
+        # Feature selection using Random Forest
+        rf = RandomForestClassifier(random_state=72)
+        rf.fit(X, y)
+        feature_importance = pd.Series(rf.feature_importances_, index=EXPECTED_FEATURES)
+        logger.info(f"Feature Importance:\n{feature_importance.sort_values(ascending=False)}")
+        selected_features = EXPECTED_FEATURES  # Use all for now, adjust if needed
+        X = X[selected_features]
+
+        # Apply SMOTE
         smote = SMOTE(sampling_strategy='auto', random_state=72)
         X_resampled, y_resampled = smote.fit_resample(X, y)
         logger.info(f"Applied SMOTE: {len(X_resampled)} samples after resampling")
         print(f"SMOTE applied: {len(X_resampled)} samples")
+
+        # Split dataset
         X_train, X_test, y_train, y_test = train_test_split(
             X_resampled, y_resampled, test_size=0.2, random_state=72
         )
@@ -84,27 +96,28 @@ def train_model(data: pd.DataFrame) -> Tuple[Any, StandardScaler]:
             'RandomForest': {
                 'model': RandomForestClassifier(random_state=72),
                 'param_grid': {
-                    'n_estimators': [100, 200, 300],
-                    'max_depth': [None, 10, 20],
-                    'min_samples_split': [2, 5],
-                    'min_samples_leaf': [1, 2]
+                    'n_estimators': [100, 200, 300, 500],
+                    'max_depth': [None, 10, 20, 30],
+                    'min_samples_split': [2, 5, 10],
+                    'min_samples_leaf': [1, 2, 4]
                 }
             },
             'XGBoost': {
                 'model': XGBClassifier(random_state=72, eval_metric='logloss'),
                 'param_grid': {
-                    'n_estimators': [100, 200, 300],
-                    'max_depth': [3, 5, 7],
-                    'learning_rate': [0.01, 0.05, 0.1],
-                    'subsample': [0.7, 0.8, 0.9],
-                    'colsample_bytree': [0.7, 0.8, 0.9]
+                    'n_estimators': [100, 200, 300, 500],
+                    'max_depth': [3, 5, 7, 9],
+                    'learning_rate': [0.01, 0.05, 0.1, 0.2],
+                    'subsample': [0.6, 0.8, 1.0],
+                    'colsample_bytree': [0.6, 0.8, 1.0]
                 }
             },
             'LogisticRegression': {
-                'model': LogisticRegression(random_state=72, max_iter=1000),
+                'model': LogisticRegression(random_state=72, max_iter=2000),
                 'param_grid': {
-                    'C': [0.1, 1, 10],
-                    'solver': ['lbfgs', 'liblinear']
+                    'C': [0.01, 0.1, 1, 10, 100],
+                    'solver': ['lbfgs', 'liblinear', 'saga'],
+                    'penalty': ['l2', 'l1']
                 }
             }
         }
@@ -146,7 +159,7 @@ def train_model(data: pd.DataFrame) -> Tuple[Any, StandardScaler]:
 
         logger.info(f"Best model: {best_model_name} with accuracy {best_accuracy * 100:.2f}%")
         print(f"Best model: {best_model_name} with accuracy {best_accuracy * 100:.2f}%")
-        return best_model, scaler
+        return best_model, scaler, selected_features
     except Exception as e:
         logger.error(f"Failed to train model: {str(e)}")
         print(f"Error training model: {str(e)}")
@@ -160,12 +173,13 @@ def main():
             logger.warning(f"Project directory contains spaces: {os.getcwd()}")
             print(f"Warning: Project directory contains spaces: {os.getcwd()}")
         data = load_and_clean_data('heart.csv')
-        model, scaler = train_model(data)
+        model, scaler, selected_features = train_model(data)
         model.version = "1.0.0"
         joblib.dump(model, 'heart_attack_model.pkl')
         joblib.dump(scaler, 'scaler.pkl')
-        logger.info("Saved model and scaler to heart_attack_model.pkl and scaler.pkl")
-        print("Saved model and scaler to heart_attack_model.pkl and scaler.pkl")
+        joblib.dump(selected_features, 'selected_features.pkl')
+        logger.info("Saved model, scaler, and selected features to heart_attack_model.pkl, scaler.pkl, and selected_features.pkl")
+        print("Saved model, scaler, and selected features to heart_attack_model.pkl, scaler.pkl, and selected_features.pkl")
     except Exception as e:
         logger.error(f"Training failed: {str(e)}")
         print(f"Training failed: {str(e)}")
