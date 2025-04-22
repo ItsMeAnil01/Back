@@ -2,10 +2,10 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
 import numpy as np
+import pandas as pd
 import os
 import logging
 from typing import Dict, List
-from xgboost import XGBClassifier
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -51,21 +51,17 @@ try:
         raise FileNotFoundError("Model or scaler file not found. Run train_model.py first.")
     model = joblib.load('heart_attack_model.pkl')
     scaler = joblib.load('scaler.pkl')
-    if not isinstance(model, XGBClassifier):
-        raise TypeError(f"Expected XGBClassifier model, got {type(model).__name__}")
     model_version = getattr(model, 'version', 'unknown')
-    if model_version != MODEL_VERSION:
-        logger.warning(f"Incompatible model version: expected {MODEL_VERSION}, got {model_version}")
     model_type = type(model).__name__
     logger.info(f"Model and scaler loaded successfully. Model type: {model_type}, Version: {model_version}")
 except Exception as e:
     logger.error(f"Failed to load model or scaler: {str(e)}")
     raise
 
-def validate_input(data: Dict[str, str]) -> tuple[List[float], str]:
+def validate_input(data: Dict[str, str]) -> tuple[pd.DataFrame, str]:
     if not all(feature in data for feature in EXPECTED_FEATURES):
         missing = [f for f in EXPECTED_FEATURES if f not in data]
-        return [], f"Missing required features: {', '.join(missing)}"
+        return None, f"Missing required features: {', '.join(missing)}"
     input_data = []
     errors = []
     for feature in EXPECTED_FEATURES:
@@ -81,8 +77,9 @@ def validate_input(data: Dict[str, str]) -> tuple[List[float], str]:
     if errors:
         error_msg = "; ".join(errors)
         logger.warning(f"Input validation failed: {error_msg}")
-        return [], error_msg
-    return input_data, ""
+        return None, error_msg
+    input_df = pd.DataFrame([input_data], columns=EXPECTED_FEATURES)
+    return input_df, ""
 
 @app.route('/', methods=['GET'])
 def root():
@@ -97,11 +94,11 @@ def predict():
             logger.warning("No JSON data received")
             return jsonify({'error': 'No input data provided'}), 400
         logger.info(f"Received input: {data}")
-        input_data, error = validate_input(data)
+        input_df, error = validate_input(data)
         if error:
             logger.warning(f"Input validation failed: {error}")
             return jsonify({'error': error}), 400
-        input_data_scaled = scaler.transform([input_data])
+        input_data_scaled = scaler.transform(input_df)
         prediction = model.predict_proba(input_data_scaled)[0][1] * 100
         result = {'Heart Attack Risk': f'{prediction:.2f}%'}
         logger.info(f"Prediction: {result}")
