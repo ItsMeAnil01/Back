@@ -45,17 +45,18 @@ FEATURE_RANGES = {
 # Model version
 MODEL_VERSION = "1.0.0"
 
-# Load model and scaler
+# Load model, scaler, and selected features
 try:
-    if not os.path.exists('heart_attack_model.pkl') or not os.path.exists('scaler.pkl'):
-        raise FileNotFoundError("Model or scaler file not found. Run train_model.py first.")
+    if not os.path.exists('heart_attack_model.pkl') or not os.path.exists('scaler.pkl') or not os.path.exists('selected_features.pkl'):
+        raise FileNotFoundError("Model, scaler, or selected features file not found. Run train_model.py first.")
     model = joblib.load('heart_attack_model.pkl')
     scaler = joblib.load('scaler.pkl')
+    selected_features = joblib.load('selected_features.pkl')
     model_version = getattr(model, 'version', 'unknown')
     model_type = type(model).__name__
-    logger.info(f"Model and scaler loaded successfully. Model type: {model_type}, Version: {model_version}")
+    logger.info(f"Model, scaler, and features loaded successfully. Model type: {model_type}, Version: {model_version}, Features: {selected_features}")
 except Exception as e:
-    logger.error(f"Failed to load model or scaler: {str(e)}")
+    logger.error(f"Failed to load model, scaler, or features: {str(e)}")
     raise
 
 def validate_input(data: Dict[str, str]) -> tuple[pd.DataFrame, str]:
@@ -79,6 +80,8 @@ def validate_input(data: Dict[str, str]) -> tuple[pd.DataFrame, str]:
         logger.warning(f"Input validation failed: {error_msg}")
         return None, error_msg
     input_df = pd.DataFrame([input_data], columns=EXPECTED_FEATURES)
+    # Select only the features used in training
+    input_df = input_df[selected_features]
     return input_df, ""
 
 @app.route('/', methods=['GET'])
