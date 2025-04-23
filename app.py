@@ -14,7 +14,7 @@ CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "http://localh
 # Set up logging
 logging.basicConfig(
     filename='app.log',
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
@@ -45,18 +45,18 @@ FEATURE_RANGES = {
 # Model version
 MODEL_VERSION = "1.0.0"
 
-# Load model, scaler, and selected features
+# Load model and preprocessor
 try:
-    if not os.path.exists('heart_attack_model.pkl') or not os.path.exists('scaler.pkl') or not os.path.exists('selected_features.pkl'):
-        raise FileNotFoundError("Model, scaler, or selected features file not found. Run train_model.py first.")
+    if not os.path.exists('heart_attack_model.pkl') or not os.path.exists('preprocessor.pkl'):
+        logger.error("Model or preprocessor file not found. Run train_model.py first.")
+        raise FileNotFoundError("Model or preprocessor file not found. Run train_model.py first.")
     model = joblib.load('heart_attack_model.pkl')
-    scaler = joblib.load('scaler.pkl')
-    selected_features = joblib.load('selected_features.pkl')
+    preprocessor = joblib.load('preprocessor.pkl')
     model_version = getattr(model, 'version', 'unknown')
     model_type = type(model).__name__
-    logger.info(f"Model, scaler, and features loaded successfully. Model type: {model_type}, Version: {model_version}, Features: {selected_features}")
+    logger.info(f"Model and preprocessor loaded successfully. Model type: {model_type}, Version: {model_version}")
 except Exception as e:
-    logger.error(f"Failed to load model, scaler, or features: {str(e)}")
+    logger.error(f"Failed to load model or preprocessor: {str(e)}")
     raise
 
 def validate_input(data: Dict[str, str]) -> tuple[pd.DataFrame, str]:
@@ -80,8 +80,7 @@ def validate_input(data: Dict[str, str]) -> tuple[pd.DataFrame, str]:
         logger.warning(f"Input validation failed: {error_msg}")
         return None, error_msg
     input_df = pd.DataFrame([input_data], columns=EXPECTED_FEATURES)
-    # Select only the features used in training
-    input_df = input_df[selected_features]
+    logger.debug(f"Validated input DataFrame:\n{input_df}")
     return input_df, ""
 
 @app.route('/', methods=['GET'])
@@ -101,8 +100,9 @@ def predict():
         if error:
             logger.warning(f"Input validation failed: {error}")
             return jsonify({'error': error}), 400
-        input_data_scaled = scaler.transform(input_df)
-        prediction = model.predict_proba(input_data_scaled)[0][1] * 100
+        input_data_transformed = preprocessor.transform(input_df)
+        logger.debug(f"Transformed input data shape: {input_data_transformed.shape}")
+        prediction = model.predict_proba(input_data_transformed)[0][1] * 100
         result = {'Heart Attack Risk': f'{prediction:.2f}%'}
         logger.info(f"Prediction: {result}")
         return jsonify(result)
@@ -112,6 +112,7 @@ def predict():
 
 @app.route('/health', methods=['GET'])
 def health():
+    logger.info("Accessed health endpoint")
     return jsonify({'status': 'API is running', 'model_loaded': model is not None})
 
 if __name__ == '__main__':
