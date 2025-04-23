@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
 import logging
 import os
-from typing import Tuple, Any
+from typing import Tuple, Any, List
 
 # Set up logging
 logging.basicConfig(
@@ -117,7 +117,7 @@ def train_model(data: pd.DataFrame) -> Tuple[Any, StandardScaler, List[str]]:
                 'param_grid': {
                     'C': [0.01, 0.1, 1, 10, 100],
                     'solver': ['lbfgs', 'liblinear', 'saga'],
-                    'penalty': ['l2', 'l1']
+                    'penalty': ['l2']
                 }
             }
         }
