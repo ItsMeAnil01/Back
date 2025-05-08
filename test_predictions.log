@@ -1,0 +1,196 @@
+2025-04-22 23:53:43,825 - INFO - Starting automated prediction tests
+2025-04-22 23:53:43,836 - INFO - Default Values Prediction: {'Heart Attack Risk': '58.57%'}
+2025-04-22 23:53:43,841 - INFO - Set 1 (Typical Case) Prediction: {'Heart Attack Risk': '2.27%'}
+2025-04-22 23:53:43,846 - INFO - Set 2 (High-Risk Case) Prediction: {'Heart Attack Risk': '13.53%'}
+2025-04-22 23:53:43,846 - INFO - Completed automated prediction tests
+2025-04-23 09:52:15,486 - INFO - Starting automated prediction tests
+2025-04-23 09:52:15,503 - INFO - Default Values Prediction: {'Heart Attack Risk': '58.57%'}, Expected Range: 5-20%, Status: FAIL
+2025-04-23 09:52:15,511 - INFO - Set 1 (Typical Case) Prediction: {'Heart Attack Risk': '2.27%'}, Expected Range: 50-80%, Status: FAIL
+2025-04-23 09:52:15,521 - INFO - Set 2 (High-Risk Case) Prediction: {'Heart Attack Risk': '13.53%'}, Expected Range: 80-95%, Status: FAIL
+2025-04-23 09:52:15,522 - INFO - Completed automated prediction tests
+2025-04-23 10:00:35,905 - INFO - Starting automated prediction tests
+2025-04-23 10:00:35,935 - INFO - Default Values Prediction: {'Heart Attack Risk': '71.50%'}, Expected Range: 5-20%, Status: FAIL
+2025-04-23 10:00:35,962 - INFO - Set 1 (Typical Case) Prediction: {'Heart Attack Risk': '15.07%'}, Expected Range: 50-80%, Status: FAIL
+2025-04-23 10:00:35,982 - INFO - Set 2 (High-Risk Case) Prediction: {'Heart Attack Risk': '17.93%'}, Expected Range: 80-95%, Status: FAIL
+2025-04-23 10:00:35,982 - INFO - Completed automated prediction tests
+2025-04-23 10:04:14,530 - INFO - Starting automated prediction tests
+2025-04-23 10:04:14,557 - INFO - Default Values Prediction: {'Heart Attack Risk': '61.62%'}, Expected Range: 5-20%, Status: FAIL
+2025-04-23 10:04:14,573 - INFO - Set 1 (Typical Case) Prediction: {'Heart Attack Risk': '11.06%'}, Expected Range: 50-80%, Status: FAIL
+2025-04-23 10:04:14,589 - INFO - Set 2 (High-Risk Case) Prediction: {'Heart Attack Risk': '31.58%'}, Expected Range: 80-95%, Status: FAIL
+2025-04-23 10:04:14,589 - INFO - Completed automated prediction tests
+2025-04-23 10:17:31,107 - INFO - Starting automated prediction tests
+2025-04-23 10:17:31,656 - ERROR - Default Values failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 10:17:31,666 - ERROR - Set 1 (Typical Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 10:17:31,674 - ERROR - Set 2 (High-Risk Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 10:17:31,675 - INFO - Completed automated prediction tests
+2025-04-23 10:17:41,725 - INFO - Starting automated prediction tests
+2025-04-23 10:17:41,734 - ERROR - Default Values failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 10:17:41,741 - ERROR - Set 1 (Typical Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 10:17:41,747 - ERROR - Set 2 (High-Risk Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 10:17:41,747 - INFO - Completed automated prediction tests
+2025-04-23 10:37:22,546 - INFO - Starting automated prediction tests
+2025-04-23 10:37:22,641 - INFO - Default Values Prediction: {'Heart Attack Risk': '45.01%'}, Expected Range: 5-20%, Status: FAIL
+2025-04-23 10:37:22,688 - INFO - Set 1 (Typical Case) Prediction: {'Heart Attack Risk': '8.32%'}, Expected Range: 50-80%, Status: FAIL
+2025-04-23 10:37:22,729 - INFO - Set 2 (High-Risk Case) Prediction: {'Heart Attack Risk': '50.94%'}, Expected Range: 80-95%, Status: FAIL
+2025-04-23 10:37:22,730 - INFO - Completed automated prediction tests
+2025-04-23 14:10:57,280 - INFO - Starting automated prediction tests
+2025-04-23 14:10:57,303 - ERROR - Default Values failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 14:10:57,322 - ERROR - Set 1 (Typical Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 14:10:57,339 - ERROR - Set 2 (High-Risk Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 14:10:57,339 - INFO - Completed automated prediction tests
+2025-04-23 14:52:18,427 - INFO - Starting automated prediction tests
+2025-04-23 14:52:18,472 - ERROR - Default Values failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 14:52:18,512 - ERROR - Set 1 (Typical Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 14:52:18,551 - ERROR - Set 2 (High-Risk Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 14:52:18,552 - INFO - Completed automated prediction tests
+2025-04-23 15:00:44,385 - INFO - Starting automated prediction tests
+2025-04-23 15:00:44,422 - ERROR - Default Values failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 15:00:44,463 - ERROR - Set 1 (Typical Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 15:00:44,496 - ERROR - Set 2 (High-Risk Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 15:00:44,496 - INFO - Completed automated prediction tests
+2025-04-23 15:16:02,649 - INFO - Starting automated prediction tests
+2025-04-23 15:16:15,652 - ERROR - Default Values failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 15:16:15,739 - ERROR - Set 1 (Typical Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 15:16:15,824 - ERROR - Set 2 (High-Risk Case) failed: 500 Server Error: INTERNAL SERVER ERROR for url: http://127.0.0.1:5000/predict
+2025-04-23 15:16:15,824 - INFO - Completed automated prediction tests
+2025-05-07 21:28:24,710 - INFO - Starting automated prediction tests
+2025-05-07 21:28:25,683 - ERROR - Default Values failed: 500 {
+  "error": "Internal server error: X has 30 features, but ColumnTransformer is expecting 13 features as input."
+}
+
+2025-05-07 21:28:25,699 - ERROR - Set 1 (Typical Case) failed: 500 {
+  "error": "Internal server error: X has 30 features, but ColumnTransformer is expecting 13 features as input."
+}
+
+2025-05-07 21:28:25,712 - ERROR - Set 2 (High-Risk Case) failed: 500 {
+  "error": "Internal server error: X has 30 features, but ColumnTransformer is expecting 13 features as input."
+}
+
+2025-05-07 21:28:25,712 - INFO - Completed automated prediction tests
+2025-05-07 21:35:48,211 - INFO - Starting automated prediction tests
+2025-05-07 21:35:48,211 - DEBUG - Sending data for Default Values: {
+  "age": 45,
+  "sex": 1,
+  "cp": 0,
+  "trestbps": 120,
+  "chol": 200,
+  "fbs": 0,
+  "restecg": 0,
+  "thalach": 150,
+  "exang": 0,
+  "oldpeak": 0,
+  "slope": 0,
+  "ca": 0,
+  "thal": 0
+}
+2025-05-07 21:35:48,214 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-05-07 21:35:48,275 - DEBUG - http://127.0.0.1:5000 "POST /predict HTTP/1.1" 500 116
+2025-05-07 21:35:48,276 - DEBUG - Response status for Default Values: 500
+2025-05-07 21:35:48,276 - ERROR - Default Values failed: 500 {
+  "error": "Internal server error: X has 30 features, but ColumnTransformer is expecting 13 features as input."
+}
+
+2025-05-07 21:35:48,276 - DEBUG - Sending data for Set 1 (Typical Case): {
+  "age": 55,
+  "sex": 1,
+  "cp": 2,
+  "trestbps": 140,
+  "chol": 250,
+  "fbs": 0,
+  "restecg": 1,
+  "thalach": 140,
+  "exang": 1,
+  "oldpeak": 1.5,
+  "slope": 1,
+  "ca": 1,
+  "thal": 2
+}
+2025-05-07 21:35:48,278 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-05-07 21:35:48,306 - DEBUG - http://127.0.0.1:5000 "POST /predict HTTP/1.1" 500 116
+2025-05-07 21:35:48,306 - DEBUG - Response status for Set 1 (Typical Case): 500
+2025-05-07 21:35:48,306 - ERROR - Set 1 (Typical Case) failed: 500 {
+  "error": "Internal server error: X has 30 features, but ColumnTransformer is expecting 13 features as input."
+}
+
+2025-05-07 21:35:48,307 - DEBUG - Sending data for Set 2 (High-Risk Case): {
+  "age": 65,
+  "sex": 1,
+  "cp": 3,
+  "trestbps": 160,
+  "chol": 300,
+  "fbs": 1,
+  "restecg": 2,
+  "thalach": 120,
+  "exang": 1,
+  "oldpeak": 2.5,
+  "slope": 2,
+  "ca": 3,
+  "thal": 3
+}
+2025-05-07 21:35:48,308 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-05-07 21:35:48,335 - DEBUG - http://127.0.0.1:5000 "POST /predict HTTP/1.1" 500 116
+2025-05-07 21:35:48,336 - DEBUG - Response status for Set 2 (High-Risk Case): 500
+2025-05-07 21:35:48,336 - ERROR - Set 2 (High-Risk Case) failed: 500 {
+  "error": "Internal server error: X has 30 features, but ColumnTransformer is expecting 13 features as input."
+}
+
+2025-05-07 21:35:48,336 - INFO - Completed automated prediction tests
+2025-05-07 22:12:32,638 - INFO - Starting automated prediction tests
+2025-05-07 22:12:32,640 - DEBUG - Sending data for Default Values: {
+  "age": 45,
+  "sex": 1,
+  "cp": 0,
+  "trestbps": 120,
+  "chol": 200,
+  "fbs": 0,
+  "restecg": 0,
+  "thalach": 150,
+  "exang": 0,
+  "oldpeak": 0,
+  "slope": 0,
+  "ca": 0,
+  "thal": 0
+}
+2025-05-07 22:12:32,643 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-05-07 22:12:33,009 - DEBUG - http://127.0.0.1:5000 "POST /predict HTTP/1.1" 200 36
+2025-05-07 22:12:33,010 - DEBUG - Response status for Default Values: 200
+2025-05-07 22:12:33,010 - INFO - Default Values: {'Heart Attack Risk': '68.00%'}
+2025-05-07 22:12:33,010 - DEBUG - Sending data for Set 1 (Typical Case): {
+  "age": 55,
+  "sex": 1,
+  "cp": 2,
+  "trestbps": 140,
+  "chol": 250,
+  "fbs": 0,
+  "restecg": 1,
+  "thalach": 140,
+  "exang": 1,
+  "oldpeak": 1.5,
+  "slope": 1,
+  "ca": 1,
+  "thal": 2
+}
+2025-05-07 22:12:33,011 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-05-07 22:12:33,211 - DEBUG - http://127.0.0.1:5000 "POST /predict HTTP/1.1" 200 36
+2025-05-07 22:12:33,212 - DEBUG - Response status for Set 1 (Typical Case): 200
+2025-05-07 22:12:33,212 - INFO - Set 1 (Typical Case): {'Heart Attack Risk': '15.05%'}
+2025-05-07 22:12:33,212 - DEBUG - Sending data for Set 2 (High-Risk Case): {
+  "age": 65,
+  "sex": 1,
+  "cp": 3,
+  "trestbps": 160,
+  "chol": 300,
+  "fbs": 1,
+  "restecg": 2,
+  "thalach": 120,
+  "exang": 1,
+  "oldpeak": 2.5,
+  "slope": 2,
+  "ca": 3,
+  "thal": 3
+}
+2025-05-07 22:12:33,213 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2025-05-07 22:12:33,513 - DEBUG - http://127.0.0.1:5000 "POST /predict HTTP/1.1" 200 36
+2025-05-07 22:12:33,513 - DEBUG - Response status for Set 2 (High-Risk Case): 200
+2025-05-07 22:12:33,513 - INFO - Set 2 (High-Risk Case): {'Heart Attack Risk': '27.20%'}
+2025-05-07 22:12:33,513 - INFO - Completed automated prediction tests

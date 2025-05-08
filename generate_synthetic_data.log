@@ -1,0 +1,141 @@
+2025-04-22 19:35:44,717 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 19:35:44,721 - INFO - Statistics for age: mean=54.58, std=8.91, range=(0, 120)
+2025-04-22 19:35:44,721 - INFO - Statistics for sex: mean=0.68, std=0.47, range=(0, 1)
+2025-04-22 19:35:44,721 - INFO - Statistics for cp: mean=0.90, std=1.02, range=(0, 3)
+2025-04-22 19:35:44,722 - INFO - Statistics for trestbps: mean=132.04, std=17.56, range=(0, 300)
+2025-04-22 19:35:44,722 - INFO - Statistics for chol: mean=246.79, std=51.10, range=(0, 600)
+2025-04-22 19:35:44,722 - INFO - Statistics for fbs: mean=0.14, std=0.35, range=(0, 1)
+2025-04-22 19:35:44,722 - INFO - Statistics for restecg: mean=0.49, std=0.52, range=(0, 2)
+2025-04-22 19:35:44,723 - INFO - Statistics for thalach: mean=148.65, std=23.04, range=(0, 250)
+2025-04-22 19:35:44,723 - INFO - Statistics for exang: mean=0.32, std=0.47, range=(0, 1)
+2025-04-22 19:35:44,724 - INFO - Statistics for oldpeak: mean=1.07, std=1.15, range=(0, 10)
+2025-04-22 19:35:44,725 - INFO - Statistics for slope: mean=1.36, std=0.62, range=(0, 2)
+2025-04-22 19:35:44,725 - INFO - Statistics for ca: mean=0.73, std=1.00, range=(0, 4)
+2025-04-22 19:35:44,725 - INFO - Statistics for thal: mean=2.29, std=0.62, range=(0, 3)
+2025-04-22 19:35:44,726 - INFO - Statistics for target: mean=0.50, std=0.50, range=(0, 1)
+2025-04-22 19:35:44,731 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 19:35:44,739 - INFO - Saved synthetic data to synthetic_heart.csv
+2025-04-22 21:22:35,980 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 21:22:35,982 - INFO - Statistics for age: mean=54.58, std=8.91, range=(0, 120)
+2025-04-22 21:22:35,982 - INFO - Statistics for sex: mean=0.68, std=0.47, range=(0, 1)
+2025-04-22 21:22:35,983 - INFO - Statistics for cp: mean=0.90, std=1.02, range=(0, 3)
+2025-04-22 21:22:35,984 - INFO - Statistics for trestbps: mean=132.04, std=17.56, range=(0, 300)
+2025-04-22 21:22:35,984 - INFO - Statistics for chol: mean=246.79, std=51.10, range=(0, 600)
+2025-04-22 21:22:35,984 - INFO - Statistics for fbs: mean=0.14, std=0.35, range=(0, 1)
+2025-04-22 21:22:35,984 - INFO - Statistics for restecg: mean=0.49, std=0.52, range=(0, 2)
+2025-04-22 21:22:35,985 - INFO - Statistics for thalach: mean=148.65, std=23.04, range=(0, 250)
+2025-04-22 21:22:35,985 - INFO - Statistics for exang: mean=0.32, std=0.47, range=(0, 1)
+2025-04-22 21:22:35,985 - INFO - Statistics for oldpeak: mean=1.07, std=1.15, range=(0, 10)
+2025-04-22 21:22:35,986 - INFO - Statistics for slope: mean=1.36, std=0.62, range=(0, 2)
+2025-04-22 21:22:35,986 - INFO - Statistics for ca: mean=0.73, std=1.00, range=(0, 4)
+2025-04-22 21:22:35,987 - INFO - Statistics for thal: mean=2.29, std=0.62, range=(0, 3)
+2025-04-22 21:22:35,987 - INFO - Statistics for target: mean=0.50, std=0.50, range=(0, 1)
+2025-04-22 21:22:35,991 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 21:22:36,004 - INFO - Saved synthetic data to synthetic_heart.csv
+2025-04-22 21:24:07,561 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 21:24:07,563 - INFO - Statistics for age: mean=54.58, std=8.91, range=(0, 120)
+2025-04-22 21:24:07,563 - INFO - Statistics for sex: mean=0.68, std=0.47, range=(0, 1)
+2025-04-22 21:24:07,563 - INFO - Statistics for cp: mean=0.90, std=1.02, range=(0, 3)
+2025-04-22 21:24:07,564 - INFO - Statistics for trestbps: mean=132.04, std=17.56, range=(0, 300)
+2025-04-22 21:24:07,564 - INFO - Statistics for chol: mean=246.79, std=51.10, range=(0, 600)
+2025-04-22 21:24:07,565 - INFO - Statistics for fbs: mean=0.14, std=0.35, range=(0, 1)
+2025-04-22 21:24:07,565 - INFO - Statistics for restecg: mean=0.49, std=0.52, range=(0, 2)
+2025-04-22 21:24:07,565 - INFO - Statistics for thalach: mean=148.65, std=23.04, range=(0, 250)
+2025-04-22 21:24:07,566 - INFO - Statistics for exang: mean=0.32, std=0.47, range=(0, 1)
+2025-04-22 21:24:07,566 - INFO - Statistics for oldpeak: mean=1.07, std=1.15, range=(0, 10)
+2025-04-22 21:24:07,567 - INFO - Statistics for slope: mean=1.36, std=0.62, range=(0, 2)
+2025-04-22 21:24:07,567 - INFO - Statistics for ca: mean=0.73, std=1.00, range=(0, 4)
+2025-04-22 21:24:07,567 - INFO - Statistics for thal: mean=2.29, std=0.62, range=(0, 3)
+2025-04-22 21:24:07,568 - INFO - Statistics for target: mean=0.50, std=0.50, range=(0, 1)
+2025-04-22 21:24:07,574 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 21:24:07,578 - ERROR - Failed to generate synthetic data: [Errno 13] Permission denied: 'synthetic_heart.csv'
+2025-04-22 21:24:07,578 - ERROR - Main execution failed: [Errno 13] Permission denied: 'synthetic_heart.csv'
+2025-04-22 21:24:33,188 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 21:24:33,189 - INFO - Statistics for age: mean=54.58, std=8.91, range=(0, 120)
+2025-04-22 21:24:33,190 - INFO - Statistics for sex: mean=0.68, std=0.47, range=(0, 1)
+2025-04-22 21:24:33,190 - INFO - Statistics for cp: mean=0.90, std=1.02, range=(0, 3)
+2025-04-22 21:24:33,191 - INFO - Statistics for trestbps: mean=132.04, std=17.56, range=(0, 300)
+2025-04-22 21:24:33,191 - INFO - Statistics for chol: mean=246.79, std=51.10, range=(0, 600)
+2025-04-22 21:24:33,191 - INFO - Statistics for fbs: mean=0.14, std=0.35, range=(0, 1)
+2025-04-22 21:24:33,192 - INFO - Statistics for restecg: mean=0.49, std=0.52, range=(0, 2)
+2025-04-22 21:24:33,192 - INFO - Statistics for thalach: mean=148.65, std=23.04, range=(0, 250)
+2025-04-22 21:24:33,192 - INFO - Statistics for exang: mean=0.32, std=0.47, range=(0, 1)
+2025-04-22 21:24:33,193 - INFO - Statistics for oldpeak: mean=1.07, std=1.15, range=(0, 10)
+2025-04-22 21:24:33,193 - INFO - Statistics for slope: mean=1.36, std=0.62, range=(0, 2)
+2025-04-22 21:24:33,194 - INFO - Statistics for ca: mean=0.73, std=1.00, range=(0, 4)
+2025-04-22 21:24:33,194 - INFO - Statistics for thal: mean=2.29, std=0.62, range=(0, 3)
+2025-04-22 21:24:33,194 - INFO - Statistics for target: mean=0.50, std=0.50, range=(0, 1)
+2025-04-22 21:24:33,198 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 21:24:33,210 - ERROR - Failed to generate synthetic data: [Errno 13] Permission denied: 'synthetic_heart.csv'
+2025-04-22 21:24:33,210 - ERROR - Main execution failed: [Errno 13] Permission denied: 'synthetic_heart.csv'
+2025-04-22 21:30:14,173 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 21:30:14,175 - INFO - Statistics for age: mean=54.58, std=8.91, range=(0, 120)
+2025-04-22 21:30:14,175 - INFO - Statistics for sex: mean=0.68, std=0.47, range=(0, 1)
+2025-04-22 21:30:14,176 - INFO - Statistics for cp: mean=0.90, std=1.02, range=(0, 3)
+2025-04-22 21:30:14,176 - INFO - Statistics for trestbps: mean=132.04, std=17.56, range=(0, 300)
+2025-04-22 21:30:14,176 - INFO - Statistics for chol: mean=246.79, std=51.10, range=(0, 600)
+2025-04-22 21:30:14,176 - INFO - Statistics for fbs: mean=0.14, std=0.35, range=(0, 1)
+2025-04-22 21:30:14,177 - INFO - Statistics for restecg: mean=0.49, std=0.52, range=(0, 2)
+2025-04-22 21:30:14,177 - INFO - Statistics for thalach: mean=148.65, std=23.04, range=(0, 250)
+2025-04-22 21:30:14,177 - INFO - Statistics for exang: mean=0.32, std=0.47, range=(0, 1)
+2025-04-22 21:30:14,177 - INFO - Statistics for oldpeak: mean=1.07, std=1.15, range=(0, 10)
+2025-04-22 21:30:14,178 - INFO - Statistics for slope: mean=1.36, std=0.62, range=(0, 2)
+2025-04-22 21:30:14,178 - INFO - Statistics for ca: mean=0.73, std=1.00, range=(0, 4)
+2025-04-22 21:30:14,178 - INFO - Statistics for thal: mean=2.29, std=0.62, range=(0, 3)
+2025-04-22 21:30:14,178 - INFO - Statistics for target: mean=0.50, std=0.50, range=(0, 1)
+2025-04-22 21:30:14,181 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 21:30:14,184 - ERROR - Failed to generate synthetic data: [Errno 13] Permission denied: 'synthetic_heart.csv'
+2025-04-22 21:30:14,184 - ERROR - Main execution failed: [Errno 13] Permission denied: 'synthetic_heart.csv'
+2025-04-22 21:45:12,964 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 21:45:12,970 - INFO - Statistics for age: mean=54.58, std=8.91, range=(0, 120)
+2025-04-22 21:45:12,971 - INFO - Statistics for sex: mean=0.68, std=0.47, range=(0, 1)
+2025-04-22 21:45:12,974 - INFO - Statistics for cp: mean=0.90, std=1.02, range=(0, 3)
+2025-04-22 21:45:12,975 - INFO - Statistics for trestbps: mean=132.04, std=17.56, range=(0, 300)
+2025-04-22 21:45:12,975 - INFO - Statistics for chol: mean=246.79, std=51.10, range=(0, 600)
+2025-04-22 21:45:12,976 - INFO - Statistics for fbs: mean=0.14, std=0.35, range=(0, 1)
+2025-04-22 21:45:12,977 - INFO - Statistics for restecg: mean=0.49, std=0.52, range=(0, 2)
+2025-04-22 21:45:12,977 - INFO - Statistics for thalach: mean=148.65, std=23.04, range=(0, 250)
+2025-04-22 21:45:12,977 - INFO - Statistics for exang: mean=0.32, std=0.47, range=(0, 1)
+2025-04-22 21:45:12,978 - INFO - Statistics for oldpeak: mean=1.07, std=1.15, range=(0, 10)
+2025-04-22 21:45:12,978 - INFO - Statistics for slope: mean=1.36, std=0.62, range=(0, 2)
+2025-04-22 21:45:12,978 - INFO - Statistics for ca: mean=0.73, std=1.00, range=(0, 4)
+2025-04-22 21:45:12,978 - INFO - Statistics for thal: mean=2.29, std=0.62, range=(0, 3)
+2025-04-22 21:45:12,979 - INFO - Statistics for target: mean=0.50, std=0.50, range=(0, 1)
+2025-04-22 21:45:12,983 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 21:45:12,994 - INFO - Saved synthetic data to synthetic_heart.csv
+2025-04-22 22:05:02,920 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 22:05:02,921 - INFO - Statistics for age: mean=54.58, std=8.91, range=(0, 120)
+2025-04-22 22:05:02,922 - INFO - Statistics for sex: mean=0.68, std=0.47, range=(0, 1)
+2025-04-22 22:05:02,922 - INFO - Statistics for cp: mean=0.90, std=1.02, range=(0, 3)
+2025-04-22 22:05:02,923 - INFO - Statistics for trestbps: mean=132.04, std=17.56, range=(0, 300)
+2025-04-22 22:05:02,923 - INFO - Statistics for chol: mean=246.79, std=51.10, range=(0, 600)
+2025-04-22 22:05:02,923 - INFO - Statistics for fbs: mean=0.14, std=0.35, range=(0, 1)
+2025-04-22 22:05:02,923 - INFO - Statistics for restecg: mean=0.49, std=0.52, range=(0, 2)
+2025-04-22 22:05:02,924 - INFO - Statistics for thalach: mean=148.65, std=23.04, range=(0, 250)
+2025-04-22 22:05:02,924 - INFO - Statistics for exang: mean=0.32, std=0.47, range=(0, 1)
+2025-04-22 22:05:02,924 - INFO - Statistics for oldpeak: mean=1.07, std=1.15, range=(0, 10)
+2025-04-22 22:05:02,925 - INFO - Statistics for slope: mean=1.36, std=0.62, range=(0, 2)
+2025-04-22 22:05:02,925 - INFO - Statistics for ca: mean=0.73, std=1.00, range=(0, 4)
+2025-04-22 22:05:02,925 - INFO - Statistics for thal: mean=2.29, std=0.62, range=(0, 3)
+2025-04-22 22:05:02,925 - INFO - Statistics for target: mean=0.50, std=0.50, range=(0, 1)
+2025-04-22 22:05:02,929 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 22:05:02,933 - ERROR - Permission denied when writing to synthetic_heart.csv: [Errno 13] Permission denied: 'synthetic_heart.csv'
+2025-04-22 22:05:02,933 - ERROR - Failed to generate synthetic data: Cannot write to synthetic_heart.csv. Ensure you have write permissions and the file is not open.
+2025-04-22 22:05:02,933 - ERROR - Main execution failed: Cannot write to synthetic_heart.csv. Ensure you have write permissions and the file is not open.
+2025-04-22 22:37:23,422 - INFO - Loaded input data with 330 rows and 16 columns
+2025-04-22 22:37:23,431 - INFO - Computed KDE for age
+2025-04-22 22:37:23,431 - INFO - Computed KDE for trestbps
+2025-04-22 22:37:23,432 - INFO - Computed KDE for chol
+2025-04-22 22:37:23,432 - INFO - Computed KDE for thalach
+2025-04-22 22:37:23,432 - INFO - Computed KDE for oldpeak
+2025-04-22 22:37:23,435 - INFO - Probabilities for sex: {1: np.float64(0.6848484848484848), 0: np.float64(0.3151515151515151)}
+2025-04-22 22:37:23,435 - INFO - Probabilities for cp: {0: np.float64(0.503030303030303), 2: np.float64(0.2636363636363636), 1: np.float64(0.16363636363636364), 3: np.float64(0.0696969696969697)}
+2025-04-22 22:37:23,436 - INFO - Probabilities for fbs: {0: np.float64(0.8575757575757575), 1: np.float64(0.14242424242424243)}
+2025-04-22 22:37:23,436 - INFO - Probabilities for restecg: {0: np.float64(0.5212121212121212), 1: np.float64(0.4666666666666667), 2: np.float64(0.012121212121212121)}
+2025-04-22 22:37:23,437 - INFO - Probabilities for exang: {0: np.float64(0.6818181818181818), 1: np.float64(0.3181818181818182)}
+2025-04-22 22:37:23,437 - INFO - Probabilities for slope: {1: np.float64(0.4909090909090909), 2: np.float64(0.43333333333333335), 0: np.float64(0.07575757575757576)}
+2025-04-22 22:37:23,437 - INFO - Probabilities for ca: {0: np.float64(0.5606060606060606), 1: np.float64(0.23636363636363636), 2: np.float64(0.12727272727272726), 3: np.float64(0.06060606060606061), 4: np.float64(0.015151515151515152)}
+2025-04-22 22:37:23,437 - INFO - Probabilities for thal: {2: np.float64(0.5484848484848485), 3: np.float64(0.37272727272727274), 1: np.float64(0.07272727272727272), 0: np.float64(0.006060606060606061)}
+2025-04-22 22:37:23,438 - INFO - Probabilities for target: {1: np.float64(0.5), 0: np.float64(0.5)}
+2025-04-22 22:37:23,449 - INFO - Generated synthetic data with 1000 rows
+2025-04-22 22:37:23,455 - INFO - Saved synthetic data to synthetic_heart.csv

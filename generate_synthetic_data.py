@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import logging
 import os
+from scipy.stats import gaussian_kde
 
 # Set up logging
 logging.basicConfig(
@@ -35,6 +36,9 @@ COLUMNS = [
     "thalach", "exang", "oldpeak", "slope", "ca", "thal", "target"
 ]
 
+CATEGORICAL_FEATURES = ["sex", "cp", "fbs", "restecg", "exang", "slope", "ca", "thal", "target"]
+CONTINUOUS_FEATURES = ["age", "trestbps", "chol", "thalach", "oldpeak"]
+
 def generate_synthetic_data(input_file: str, output_file: str, num_samples: int = 1000):
     """
     Generate synthetic data based on input CSV and save to output CSV.
@@ -53,35 +57,56 @@ def generate_synthetic_data(input_file: str, output_file: str, num_samples: int 
             logger.error(f"Missing columns in input data: {missing_cols}")
             raise ValueError(f"Missing columns: {missing_cols}")
 
-        # Compute statistics
-        stats = {}
-        for col in COLUMNS:
-            mean = data[col].mean()
-            std = data[col].std()
-            min_val, max_val = FEATURE_RANGES[col]
-            stats[col] = {'mean': mean, 'std': std, 'min': min_val, 'max': max_val}
-            logger.info(f"Statistics for {col}: mean={mean:.2f}, std={std:.2f}, range=({min_val}, {max_val})")
+        # Compute KDE for continuous features
+        kde_estimators = {}
+        for col in CONTINUOUS_FEATURES:
+            values = data[col].dropna().values
+            kde = gaussian_kde(values)
+            kde_estimators[col] = kde
+            logger.info(f"Computed KDE for {col}")
+
+        # Compute probabilities for categorical features
+        cat_probs = {}
+        for col in CATEGORICAL_FEATURES:
+            value_counts = data[col].value_counts(normalize=True)
+            values = value_counts.index
+            probs = value_counts.values
+            cat_probs[col] = {'values': values, 'probs': probs}
+            logger.info(f"Probabilities for {col}: {dict(zip(values, probs))}")
 
         # Generate synthetic data
         synthetic_data = {}
         for col in COLUMNS:
-            # Generate samples from normal distribution
-            samples = np.random.normal(stats[col]['mean'], stats[col]['std'], num_samples)
-            # Clip to feature range and round appropriately
-            samples = np.clip(samples, stats[col]['min'], stats[col]['max'])
-            if col in ['age', 'trestbps', 'chol', 'thalach', 'ca']:
-                samples = np.round(samples).astype(int)
-            elif col == 'oldpeak':
-                samples = np.round(samples, 1)
+            if col in CONTINUOUS_FEATURES:
+                # Continuous features: sample from KDE
+                samples = kde_estimators[col].resample(num_samples)[0]
+                samples = np.clip(samples, FEATURE_RANGES[col][0], FEATURE_RANGES[col][1])
+                if col in ['age', 'trestbps', 'chol', 'thalach']:
+                    samples = np.round(samples).astype(int)
+                elif col == 'oldpeak':
+                    samples = np.round(samples, 1)
             else:
-                samples = np.round(samples).astype(int)
+                # Categorical features: sample from empirical distribution
+                samples = np.random.choice(
+                    cat_probs[col]['values'],
+                    size=num_samples,
+                    p=cat_probs[col]['probs']
+                ).astype(int)
             synthetic_data[col] = samples
         synthetic_df = pd.DataFrame(synthetic_data, columns=COLUMNS)
         logger.info(f"Generated synthetic data with {len(synthetic_df)} rows")
 
-        # Save to output CSV
-        synthetic_df.to_csv(output_file, index=False)
-        logger.info(f"Saved synthetic data to {output_file}")
+        # Save to output CSV with permission handling
+        output_dir = os.path.dirname(output_file) or '.'
+        if not os.access(output_dir, os.W_OK):
+            logger.error(f"No write permission in directory: {output_dir}")
+            raise PermissionError(f"No write permission in {output_dir}")
+        try:
+            synthetic_df.to_csv(output_file, index=False)
+            logger.info(f"Saved synthetic data to {output_file}")
+        except PermissionError:
+            logger.error(f"Permission denied: Unable to write to {output_file}")
+            raise PermissionError(f"Permission denied: Unable to write to {output_file}")
 
     except Exception as e:
         logger.error(f"Failed to generate synthetic data: {str(e)}")

@@ -607,3 +607,3984 @@ weighted avg       0.89      0.88      0.88        66
 2025-04-22 18:36:39,941 - ERROR - Dataset file not found: HeartDiseaseRiskAssessment.csv
 2025-04-22 18:36:39,941 - ERROR - Failed to load and clean data: Dataset file not found: HeartDiseaseRiskAssessment.csv
 2025-04-22 18:36:39,941 - ERROR - Training failed: Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:47:14,803 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 18:47:14,804 - ERROR - Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:47:14,804 - ERROR - Failed to load and clean data: Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:47:14,804 - ERROR - Training failed: Dataset file not found: HeartDiseaseRiskAssessment.csv
+2025-04-22 18:52:58,742 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 18:52:58,770 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 18:52:58,776 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 18:52:58,785 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 18:52:58,794 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 18:52:58,833 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 18:52:58,837 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 18:52:58,838 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 18:52:58,849 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 18:52:58,867 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 18:52:58,872 - INFO - Applied StandardScaler to features
+2025-04-22 18:53:19,177 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-04-22 18:53:19,192 - INFO - Train Accuracy: 96.97%
+2025-04-22 18:53:19,193 - INFO - Test Accuracy: 87.88%
+2025-04-22 18:53:19,193 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-22 18:53:19,201 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 18:55:27,891 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 18:55:27,895 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 18:55:27,896 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 18:55:27,897 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 18:55:27,901 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 18:55:27,924 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 18:55:27,925 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 18:55:27,925 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 18:55:27,929 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 18:55:27,931 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 18:55:27,933 - INFO - Applied StandardScaler to features
+2025-04-22 18:55:44,152 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-04-22 18:55:44,161 - INFO - Train Accuracy: 96.97%
+2025-04-22 18:55:44,161 - INFO - Test Accuracy: 87.88%
+2025-04-22 18:55:44,161 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-22 18:55:44,164 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 19:08:11,917 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 19:08:11,940 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 19:08:11,951 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 19:08:11,968 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:08:11,979 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:08:12,016 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 19:08:12,020 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 19:08:12,021 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 19:08:12,029 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 19:08:12,034 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 19:08:12,038 - INFO - Applied StandardScaler to features
+2025-04-22 19:08:38,320 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-04-22 19:08:38,349 - INFO - Train Accuracy: 96.97%
+2025-04-22 19:08:38,349 - INFO - Test Accuracy: 87.88%
+2025-04-22 19:08:38,349 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-22 19:08:38,356 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 19:16:14,736 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 19:16:14,767 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 19:16:14,778 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 19:16:14,795 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:16:14,810 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:16:14,897 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 19:16:14,904 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 19:16:14,905 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 19:16:14,919 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 19:16:14,929 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 19:16:14,936 - INFO - Applied StandardScaler to features
+2025-04-22 19:16:45,639 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-04-22 19:16:45,660 - INFO - Train Accuracy: 96.97%
+2025-04-22 19:16:45,660 - INFO - Test Accuracy: 87.88%
+2025-04-22 19:16:45,660 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-22 19:16:45,668 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 19:37:04,563 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 19:37:04,567 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 19:37:04,567 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 19:37:04,569 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:37:04,575 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:37:04,598 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     54.648000     0.679000  ...     0.859000     2.251000
+std       8.875408     0.467094  ...     0.853139     0.648398
+min      29.000000     0.000000  ...     0.000000     1.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      84.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 19:37:04,599 - INFO - Target distribution:
+target
+0    515
+1    485
+Name: count, dtype: int64
+2025-04-22 19:37:04,599 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 19:37:04,607 - INFO - Applied SMOTE: 1030 samples after resampling
+2025-04-22 19:37:04,609 - INFO - Train set: 824 samples, Test set: 206 samples
+2025-04-22 19:37:04,612 - INFO - Applied StandardScaler to features
+2025-04-22 21:22:33,380 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 21:22:33,396 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 21:22:33,400 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 21:22:33,410 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:22:33,418 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:22:33,462 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     54.648000     0.679000  ...     0.859000     2.251000
+std       8.875408     0.467094  ...     0.853139     0.648398
+min      29.000000     0.000000  ...     0.000000     1.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      84.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 21:22:33,465 - INFO - Target distribution:
+target
+0    515
+1    485
+Name: count, dtype: int64
+2025-04-22 21:22:33,466 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 21:22:33,484 - INFO - Applied SMOTE: 1030 samples after resampling
+2025-04-22 21:22:33,489 - INFO - Train set: 824 samples, Test set: 206 samples
+2025-04-22 21:22:33,495 - INFO - Applied StandardScaler to features
+2025-04-22 21:23:55,351 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 21:23:55,357 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 21:23:55,358 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 21:23:55,361 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:23:55,370 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:23:55,410 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     54.474000     0.673000  ...     0.873000     2.236000
+std       8.833876     0.469352  ...     0.852994     0.643987
+min      26.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      82.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 21:23:55,411 - INFO - Target distribution:
+target
+0    528
+1    472
+Name: count, dtype: int64
+2025-04-22 21:23:55,413 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 21:23:55,423 - INFO - Applied SMOTE: 1056 samples after resampling
+2025-04-22 21:23:55,426 - INFO - Train set: 844 samples, Test set: 212 samples
+2025-04-22 21:23:55,433 - INFO - Applied StandardScaler to features
+2025-04-22 21:30:15,734 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 21:30:15,755 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 21:30:15,755 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 21:30:15,757 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:30:15,765 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:30:15,799 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     54.474000     0.673000  ...     0.873000     2.236000
+std       8.833876     0.469352  ...     0.852994     0.643987
+min      26.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      82.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 21:30:15,800 - INFO - Target distribution:
+target
+0    528
+1    472
+Name: count, dtype: int64
+2025-04-22 21:30:15,801 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 21:30:15,816 - INFO - Applied SMOTE: 1056 samples after resampling
+2025-04-22 21:30:15,818 - INFO - Train set: 844 samples, Test set: 212 samples
+2025-04-22 21:30:15,823 - INFO - Applied StandardScaler to features
+2025-04-22 21:45:28,847 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 21:45:28,857 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 21:45:28,858 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 21:45:28,863 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:45:28,878 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:45:28,943 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     55.014000     0.670000  ...     0.852000     2.246000
+std       8.931493     0.470448  ...     0.843094     0.621184
+min      27.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      85.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 21:45:28,946 - INFO - Target distribution:
+target
+1    507
+0    493
+Name: count, dtype: int64
+2025-04-22 21:45:28,947 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 21:45:28,973 - INFO - Applied SMOTE: 1014 samples after resampling
+2025-04-22 21:45:28,978 - INFO - Train set: 811 samples, Test set: 203 samples
+2025-04-22 21:45:28,986 - INFO - Applied StandardScaler to features
+2025-04-22 21:55:40,704 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 21:55:40,724 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 21:55:40,732 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 21:55:40,744 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:55:40,760 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:55:40,844 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     55.014000     0.670000  ...     0.852000     2.246000
+std       8.931493     0.470448  ...     0.843094     0.621184
+min      27.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      85.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 21:55:40,849 - INFO - Target distribution:
+target
+1    507
+0    493
+Name: count, dtype: int64
+2025-04-22 21:55:40,850 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 21:55:40,869 - INFO - Applied SMOTE: 1014 samples after resampling
+2025-04-22 21:55:40,873 - INFO - Train set: 811 samples, Test set: 203 samples
+2025-04-22 21:55:40,886 - INFO - Applied StandardScaler to features
+2025-04-22 21:57:35,409 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 21:57:35,420 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 21:57:35,421 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 21:57:35,425 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:57:35,435 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:57:35,476 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     55.014000     0.670000  ...     0.852000     2.246000
+std       8.931493     0.470448  ...     0.843094     0.621184
+min      27.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      85.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 21:57:35,477 - INFO - Target distribution:
+target
+1    507
+0    493
+Name: count, dtype: int64
+2025-04-22 21:57:35,478 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 21:57:35,488 - INFO - Applied SMOTE: 1014 samples after resampling
+2025-04-22 21:57:35,490 - INFO - Train set: 811 samples, Test set: 203 samples
+2025-04-22 21:57:35,494 - INFO - Applied StandardScaler to features
+2025-04-22 22:14:42,996 - DEBUG - Starting main function
+2025-04-22 22:14:42,996 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 22:14:42,996 - DEBUG - Attempting to load data from synthetic_heart.csv
+2025-04-22 22:14:43,004 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 22:14:43,005 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 22:14:43,007 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:14:43,022 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:14:43,109 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     55.014000     0.670000  ...     0.852000     2.246000
+std       8.931493     0.470448  ...     0.843094     0.621184
+min      27.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      85.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 22:14:43,110 - INFO - Target distribution:
+target
+1    507
+0    493
+Name: count, dtype: int64
+2025-04-22 22:14:43,110 - DEBUG - Starting model training
+2025-04-22 22:14:43,111 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 22:14:43,125 - INFO - Applied SMOTE: 1014 samples after resampling
+2025-04-22 22:14:43,128 - INFO - Train set: 811 samples, Test set: 203 samples
+2025-04-22 22:14:43,133 - INFO - Applied StandardScaler to features
+2025-04-22 22:14:43,133 - DEBUG - Starting GridSearchCV
+2025-04-22 22:21:28,907 - DEBUG - Starting main function
+2025-04-22 22:21:28,908 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 22:21:28,908 - DEBUG - Attempting to load data from synthetic_heart.csv
+2025-04-22 22:21:28,918 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 22:21:28,919 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 22:21:28,924 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:21:28,937 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:21:29,070 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     55.014000     0.670000  ...     0.852000     2.246000
+std       8.931493     0.470448  ...     0.843094     0.621184
+min      27.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      55.000000     1.000000  ...     1.000000     2.000000
+75%      61.000000     1.000000  ...     1.000000     3.000000
+max      85.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 22:21:29,072 - INFO - Target distribution:
+target
+1    507
+0    493
+Name: count, dtype: int64
+2025-04-22 22:21:29,089 - DEBUG - Starting model training
+2025-04-22 22:21:29,091 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 22:21:29,114 - INFO - Applied SMOTE: 1014 samples after resampling
+2025-04-22 22:21:29,117 - INFO - Train set: 811 samples, Test set: 203 samples
+2025-04-22 22:21:29,154 - INFO - Applied StandardScaler to features
+2025-04-22 22:21:29,154 - DEBUG - Starting GridSearchCV
+2025-04-22 22:24:23,174 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 100, 'subsample': 0.8}
+2025-04-22 22:24:23,326 - INFO - Train Accuracy: 100.00%
+2025-04-22 22:24:23,326 - INFO - Test Accuracy: 54.68%
+2025-04-22 22:24:23,326 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.52      0.55      0.54        96
+           1       0.57      0.54      0.56       107
+
+    accuracy                           0.55       203
+   macro avg       0.55      0.55      0.55       203
+weighted avg       0.55      0.55      0.55       203
+
+2025-04-22 22:24:23,332 - INFO - Feature Importance:
+fbs         0.099113
+slope       0.088149
+chol        0.086607
+thalach     0.079647
+oldpeak     0.076690
+age         0.075136
+thal        0.074757
+trestbps    0.073230
+exang       0.071820
+cp          0.069936
+sex         0.069592
+ca          0.069556
+restecg     0.065766
+dtype: float32
+2025-04-22 22:24:23,333 - DEBUG - Model training completed
+2025-04-22 22:24:23,385 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 22:36:10,072 - INFO - Best hyperparameters: {'colsample_bytree': 0.8, 'gamma': 0.1, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 300, 'reg_lambda': 0.5, 'subsample': 0.8}
+2025-04-22 22:36:10,122 - INFO - Train Accuracy: 100.00%
+2025-04-22 22:36:10,123 - INFO - Test Accuracy: 54.68%
+2025-04-22 22:36:10,123 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.52      0.57      0.54        96
+           1       0.58      0.52      0.55       107
+
+    accuracy                           0.55       203
+   macro avg       0.55      0.55      0.55       203
+weighted avg       0.55      0.55      0.55       203
+
+2025-04-22 22:36:10,141 - INFO - Feature Importance:
+fbs         0.108488
+chol        0.082946
+thalach     0.079273
+slope       0.078363
+trestbps    0.077899
+exang       0.077327
+oldpeak     0.076153
+thal        0.075424
+restecg     0.071176
+sex         0.070054
+ca          0.069058
+age         0.068537
+cp          0.065301
+dtype: float32
+2025-04-22 22:36:10,164 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 22:38:06,083 - DEBUG - Starting main function
+2025-04-22 22:38:06,083 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 22:38:06,083 - DEBUG - Attempting to load data from synthetic_heart.csv
+2025-04-22 22:38:06,087 - INFO - Loaded dataset with 1000 rows and 14 columns
+2025-04-22 22:38:06,087 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 22:38:06,093 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:38:06,099 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:38:06,128 - INFO - Dataset summary:
+               age          sex  ...           ca         thal
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     55.097000     0.652000  ...     0.765000     2.265000
+std       9.704833     0.476574  ...     1.034817     0.634963
+min      27.000000     0.000000  ...     0.000000     0.000000
+25%      49.000000     0.000000  ...     0.000000     2.000000
+50%      56.000000     1.000000  ...     0.000000     2.000000
+75%      62.000000     1.000000  ...     1.000000     3.000000
+max      81.000000     1.000000  ...     4.000000     3.000000
+
+[8 rows x 13 columns]
+2025-04-22 22:38:06,129 - INFO - Target distribution:
+target
+0    506
+1    494
+Name: count, dtype: int64
+2025-04-22 22:38:06,129 - DEBUG - Starting model training
+2025-04-22 22:38:06,130 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 22:38:06,145 - INFO - Applied SMOTE: 1012 samples after resampling
+2025-04-22 22:38:06,147 - INFO - Train set: 809 samples, Test set: 203 samples
+2025-04-22 22:38:06,150 - INFO - Applied StandardScaler to features
+2025-04-22 22:38:06,150 - DEBUG - Starting GridSearchCV
+2025-04-22 22:39:13,997 - INFO - Best hyperparameters: {'colsample_bytree': 0.9, 'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 200, 'reg_lambda': 1, 'subsample': 0.9}
+2025-04-22 22:39:14,012 - INFO - Train Accuracy: 69.96%
+2025-04-22 22:39:14,012 - INFO - Test Accuracy: 58.62%
+2025-04-22 22:39:14,012 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.56      0.55      0.56        96
+           1       0.61      0.62      0.61       107
+
+    accuracy                           0.59       203
+   macro avg       0.58      0.58      0.58       203
+weighted avg       0.59      0.59      0.59       203
+
+2025-04-22 22:39:14,016 - INFO - Feature Importance:
+restecg     0.111362
+exang       0.089525
+thalach     0.087860
+thal        0.087417
+chol        0.082647
+trestbps    0.079033
+age         0.075406
+cp          0.074370
+fbs         0.074048
+oldpeak     0.072463
+slope       0.071824
+ca          0.048176
+sex         0.045868
+dtype: float32
+2025-04-22 22:39:14,016 - DEBUG - Model training completed
+2025-04-22 22:39:14,025 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 23:41:55,974 - DEBUG - Starting main function
+2025-04-22 23:41:55,975 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 23:41:55,975 - DEBUG - Attempting to load data from heart.csv
+2025-04-22 23:41:55,983 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 23:41:55,985 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 23:41:55,991 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 23:41:55,996 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 23:41:56,025 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 23:41:56,028 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 23:41:56,028 - DEBUG - Starting model training
+2025-04-22 23:41:56,028 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 23:41:56,033 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 23:41:56,036 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 23:41:56,038 - INFO - Applied StandardScaler to features
+2025-04-22 23:41:56,039 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-22 23:42:10,702 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-04-22 23:42:10,754 - INFO - RandomForest Test Accuracy: 86.36%
+2025-04-22 23:42:10,755 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.93      0.85        28
+           1       0.94      0.82      0.87        38
+
+    accuracy                           0.86        66
+   macro avg       0.86      0.87      0.86        66
+weighted avg       0.88      0.86      0.86        66
+
+2025-04-22 23:42:10,755 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-22 23:42:22,787 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.9, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 300, 'subsample': 0.9}
+2025-04-22 23:42:22,797 - INFO - XGBoost Test Accuracy: 86.36%
+2025-04-22 23:42:22,797 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.96      0.86        28
+           1       0.97      0.79      0.87        38
+
+    accuracy                           0.86        66
+   macro avg       0.87      0.88      0.86        66
+weighted avg       0.88      0.86      0.86        66
+
+2025-04-22 23:42:22,797 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-22 23:42:22,863 - INFO - Best hyperparameters for LogisticRegression: {'C': 10, 'solver': 'lbfgs'}
+2025-04-22 23:42:22,868 - INFO - LogisticRegression Test Accuracy: 87.88%
+2025-04-22 23:42:22,868 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-22 23:42:22,869 - INFO - Best model: LogisticRegression with accuracy 87.88%
+2025-04-22 23:42:22,871 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 23:52:02,921 - DEBUG - Starting main function
+2025-04-22 23:52:02,921 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-22 23:52:02,921 - DEBUG - Attempting to load data from heart.csv
+2025-04-22 23:52:02,924 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 23:52:02,925 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 23:52:02,926 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 23:52:02,930 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 23:52:02,951 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 23:52:02,952 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 23:52:02,952 - DEBUG - Starting model training
+2025-04-22 23:52:02,952 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 23:52:02,956 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-22 23:52:02,957 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 23:52:02,960 - INFO - Applied StandardScaler to features
+2025-04-22 23:52:02,960 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-22 23:52:15,987 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-04-22 23:52:16,001 - INFO - RandomForest Test Accuracy: 86.36%
+2025-04-22 23:52:16,001 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.93      0.85        28
+           1       0.94      0.82      0.87        38
+
+    accuracy                           0.86        66
+   macro avg       0.86      0.87      0.86        66
+weighted avg       0.88      0.86      0.86        66
+
+2025-04-22 23:52:16,001 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-22 23:52:26,509 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.9, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 300, 'subsample': 0.9}
+2025-04-22 23:52:26,518 - INFO - XGBoost Test Accuracy: 86.36%
+2025-04-22 23:52:26,518 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.96      0.86        28
+           1       0.97      0.79      0.87        38
+
+    accuracy                           0.86        66
+   macro avg       0.87      0.88      0.86        66
+weighted avg       0.88      0.86      0.86        66
+
+2025-04-22 23:52:26,518 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-22 23:52:26,580 - INFO - Best hyperparameters for LogisticRegression: {'C': 10, 'solver': 'lbfgs'}
+2025-04-22 23:52:26,586 - INFO - LogisticRegression Test Accuracy: 87.88%
+2025-04-22 23:52:26,586 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-22 23:52:26,586 - INFO - Best model: LogisticRegression with accuracy 87.88%
+2025-04-22 23:52:26,588 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-23 09:47:34,237 - DEBUG - Starting main function
+2025-04-23 09:47:34,240 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 09:47:34,240 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 09:47:34,269 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 09:47:34,277 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 09:47:34,294 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:47:34,307 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:47:34,368 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 09:47:34,374 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 09:47:34,375 - DEBUG - Starting model training
+2025-04-23 09:47:34,376 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 09:47:34,635 - INFO - Feature Importance:
+cp          0.157111
+thalach     0.135870
+oldpeak     0.118199
+ca          0.107239
+age         0.090432
+trestbps    0.078496
+chol        0.076659
+slope       0.069591
+thal        0.065913
+sex         0.035715
+exang       0.033328
+restecg     0.023054
+fbs         0.008393
+dtype: float64
+2025-04-23 09:47:34,669 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 09:47:34,674 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 09:47:34,682 - INFO - Applied StandardScaler to features
+2025-04-23 09:47:34,682 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 09:49:06,328 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-04-23 09:49:06,399 - INFO - RandomForest Test Accuracy: 86.36%
+2025-04-23 09:49:06,399 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.93      0.85        28
+           1       0.94      0.82      0.87        38
+
+    accuracy                           0.86        66
+   macro avg       0.86      0.87      0.86        66
+weighted avg       0.88      0.86      0.86        66
+
+2025-04-23 09:49:06,399 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 09:49:45,265 - DEBUG - Starting main function
+2025-04-23 09:49:45,265 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 09:49:45,265 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 09:49:45,277 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 09:49:45,278 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 09:49:45,281 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:49:45,294 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:49:45,334 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 09:49:45,335 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 09:49:45,335 - DEBUG - Starting model training
+2025-04-23 09:49:45,336 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 09:49:45,474 - INFO - Feature Importance:
+cp          0.157111
+thalach     0.135870
+oldpeak     0.118199
+ca          0.107239
+age         0.090432
+trestbps    0.078496
+chol        0.076659
+slope       0.069591
+thal        0.065913
+sex         0.035715
+exang       0.033328
+restecg     0.023054
+fbs         0.008393
+dtype: float64
+2025-04-23 09:49:45,480 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 09:49:45,482 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 09:49:45,486 - INFO - Applied StandardScaler to features
+2025-04-23 09:49:45,486 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 09:51:05,046 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-04-23 09:51:05,068 - INFO - RandomForest Test Accuracy: 86.36%
+2025-04-23 09:51:05,068 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.93      0.85        28
+           1       0.94      0.82      0.87        38
+
+    accuracy                           0.86        66
+   macro avg       0.86      0.87      0.86        66
+weighted avg       0.88      0.86      0.86        66
+
+2025-04-23 09:51:05,068 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 09:51:47,914 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.6}
+2025-04-23 09:51:47,929 - INFO - XGBoost Test Accuracy: 83.33%
+2025-04-23 09:51:47,930 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.76      0.89      0.82        28
+           1       0.91      0.79      0.85        38
+
+    accuracy                           0.83        66
+   macro avg       0.83      0.84      0.83        66
+weighted avg       0.84      0.83      0.83        66
+
+2025-04-23 09:51:47,930 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-23 09:51:48,081 - INFO - Best hyperparameters for LogisticRegression: {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-23 09:51:48,092 - INFO - LogisticRegression Test Accuracy: 87.88%
+2025-04-23 09:51:48,092 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-23 09:51:48,092 - INFO - Best model: LogisticRegression with accuracy 87.88%
+2025-04-23 09:51:48,099 - INFO - Saved model, scaler, and selected features to heart_attack_model.pkl, scaler.pkl, and selected_features.pkl
+2025-04-23 09:55:48,267 - DEBUG - Starting main function
+2025-04-23 09:55:48,267 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 09:55:48,267 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 09:55:48,271 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 09:55:48,272 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 09:55:48,273 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:55:48,316 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:55:48,380 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 09:55:48,381 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 09:55:48,381 - DEBUG - Starting model training
+2025-04-23 09:55:48,383 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 09:55:48,534 - INFO - Feature Importance:
+cp          0.157111
+thalach     0.135870
+oldpeak     0.118199
+ca          0.107239
+age         0.090432
+trestbps    0.078496
+chol        0.076659
+slope       0.069591
+thal        0.065913
+sex         0.035715
+exang       0.033328
+restecg     0.023054
+fbs         0.008393
+dtype: float64
+2025-04-23 09:55:48,535 - INFO - Selected features: ['age', 'cp', 'trestbps', 'chol', 'thalach', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 09:55:48,540 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 09:55:48,542 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 09:55:48,545 - INFO - Applied StandardScaler to features
+2025-04-23 09:55:48,546 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 09:57:09,102 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-23 09:57:11,903 - INFO - Calibrated RandomForest model
+2025-04-23 09:57:12,042 - INFO - RandomForest Test Accuracy: 81.82%
+2025-04-23 09:57:12,042 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80        28
+           1       0.88      0.79      0.83        38
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.83      0.82      0.82        66
+
+2025-04-23 09:57:12,042 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 09:58:13,285 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.6, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.6}
+2025-04-23 09:58:13,602 - INFO - Calibrated XGBoost model
+2025-04-23 09:58:13,619 - INFO - XGBoost Test Accuracy: 81.82%
+2025-04-23 09:58:13,619 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.74      0.89      0.81        28
+           1       0.91      0.76      0.83        38
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.83      0.82        66
+weighted avg       0.83      0.82      0.82        66
+
+2025-04-23 09:58:13,619 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-23 09:58:13,762 - INFO - Best hyperparameters for LogisticRegression: {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-23 09:58:13,804 - INFO - Calibrated LogisticRegression model
+2025-04-23 09:58:13,812 - INFO - LogisticRegression Test Accuracy: 84.85%
+2025-04-23 09:58:13,812 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.82      0.82        28
+           1       0.87      0.87      0.87        38
+
+    accuracy                           0.85        66
+   macro avg       0.84      0.84      0.84        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 09:58:13,813 - INFO - Best model: LogisticRegression with accuracy 84.85%
+2025-04-23 09:58:13,818 - INFO - Saved model, scaler, and selected features to heart_attack_model.pkl, scaler.pkl, and selected_features.pkl
+2025-04-23 09:58:19,696 - DEBUG - Starting main function
+2025-04-23 09:58:19,697 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 09:58:19,697 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 09:58:19,703 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 09:58:19,704 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 09:58:19,706 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:58:19,715 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 09:58:19,743 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 09:58:19,744 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 09:58:19,744 - DEBUG - Starting model training
+2025-04-23 09:58:19,744 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 09:58:19,993 - INFO - Feature Importance:
+cp          0.157111
+thalach     0.135870
+oldpeak     0.118199
+ca          0.107239
+age         0.090432
+trestbps    0.078496
+chol        0.076659
+slope       0.069591
+thal        0.065913
+sex         0.035715
+exang       0.033328
+restecg     0.023054
+fbs         0.008393
+dtype: float64
+2025-04-23 09:58:19,993 - INFO - Selected features: ['age', 'cp', 'trestbps', 'chol', 'thalach', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 09:58:20,000 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 09:58:20,002 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 09:58:20,006 - INFO - Applied StandardScaler to features
+2025-04-23 09:58:20,006 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 09:59:40,048 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-23 09:59:40,876 - INFO - Calibrated RandomForest model
+2025-04-23 09:59:40,939 - INFO - RandomForest Test Accuracy: 81.82%
+2025-04-23 09:59:40,940 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.86      0.80        28
+           1       0.88      0.79      0.83        38
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.83      0.82      0.82        66
+
+2025-04-23 09:59:40,940 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 10:00:21,295 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.6, 'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.6}
+2025-04-23 10:00:21,632 - INFO - Calibrated XGBoost model
+2025-04-23 10:00:21,651 - INFO - XGBoost Test Accuracy: 81.82%
+2025-04-23 10:00:21,652 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.74      0.89      0.81        28
+           1       0.91      0.76      0.83        38
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.83      0.82        66
+weighted avg       0.83      0.82      0.82        66
+
+2025-04-23 10:00:21,652 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-23 10:00:21,801 - INFO - Best hyperparameters for LogisticRegression: {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-23 10:00:21,840 - INFO - Calibrated LogisticRegression model
+2025-04-23 10:00:21,850 - INFO - LogisticRegression Test Accuracy: 84.85%
+2025-04-23 10:00:21,850 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.82      0.82        28
+           1       0.87      0.87      0.87        38
+
+    accuracy                           0.85        66
+   macro avg       0.84      0.84      0.84        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 10:00:21,851 - INFO - Best model: LogisticRegression with accuracy 84.85%
+2025-04-23 10:00:21,856 - INFO - Saved model, scaler, and selected features to heart_attack_model.pkl, scaler.pkl, and selected_features.pkl
+2025-04-23 10:03:02,612 - DEBUG - Starting main function
+2025-04-23 10:03:02,612 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 10:03:02,612 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 10:03:02,618 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 10:03:02,618 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 10:03:02,620 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:03:02,629 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:03:02,661 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 10:03:02,661 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 10:03:02,662 - DEBUG - Starting model training
+2025-04-23 10:03:02,662 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 10:03:02,667 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 10:03:02,669 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 10:03:02,672 - INFO - Applied StandardScaler to features
+2025-04-23 10:03:02,672 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 10:03:40,135 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-04-23 10:03:42,148 - INFO - Calibrated RandomForest model
+2025-04-23 10:03:42,344 - INFO - RandomForest Test Accuracy: 86.36%
+2025-04-23 10:03:42,344 - INFO - RandomForest ROC-AUC: 0.94
+2025-04-23 10:03:42,344 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.89      0.85        28
+           1       0.91      0.84      0.88        38
+
+    accuracy                           0.86        66
+   macro avg       0.86      0.87      0.86        66
+weighted avg       0.87      0.86      0.86        66
+
+2025-04-23 10:03:42,344 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 10:03:57,440 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.9, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 300, 'subsample': 0.9}
+2025-04-23 10:03:58,200 - INFO - Calibrated XGBoost model
+2025-04-23 10:03:58,230 - INFO - XGBoost Test Accuracy: 89.39%
+2025-04-23 10:03:58,231 - INFO - XGBoost ROC-AUC: 0.92
+2025-04-23 10:03:58,231 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.96      0.89        28
+           1       0.97      0.84      0.90        38
+
+    accuracy                           0.89        66
+   macro avg       0.89      0.90      0.89        66
+weighted avg       0.91      0.89      0.89        66
+
+2025-04-23 10:03:58,234 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-23 10:03:58,316 - INFO - Best hyperparameters for LogisticRegression: {'C': 10, 'penalty': 'l2', 'solver': 'lbfgs'}
+2025-04-23 10:03:58,354 - INFO - Calibrated LogisticRegression model
+2025-04-23 10:03:58,371 - INFO - LogisticRegression Test Accuracy: 87.88%
+2025-04-23 10:03:58,371 - INFO - LogisticRegression ROC-AUC: 0.92
+2025-04-23 10:03:58,372 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-23 10:03:58,372 - INFO - Best model: XGBoost with accuracy 89.39%
+2025-04-23 10:03:58,419 - INFO - Saved model, scaler, and selected features to heart_attack_model.pkl, scaler.pkl, and selected_features.pkl
+2025-04-23 10:15:41,816 - DEBUG - Starting main function
+2025-04-23 10:15:41,817 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 10:15:41,817 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 10:15:41,826 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 10:15:41,828 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 10:15:41,831 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:15:41,845 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:15:41,900 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 10:15:41,901 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 10:15:41,901 - DEBUG - Starting model training
+2025-04-23 10:15:41,902 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 10:15:41,914 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 10:15:41,917 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 10:15:41,942 - INFO - Applied preprocessor to train and test sets
+2025-04-23 10:15:41,942 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 10:15:59,300 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-23 10:16:01,299 - INFO - Calibrated RandomForest model
+2025-04-23 10:16:01,529 - INFO - RandomForest Test Accuracy: 89.39%
+2025-04-23 10:16:01,529 - INFO - RandomForest ROC-AUC: 0.93
+2025-04-23 10:16:01,529 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.93      0.88        28
+           1       0.94      0.87      0.90        38
+
+    accuracy                           0.89        66
+   macro avg       0.89      0.90      0.89        66
+weighted avg       0.90      0.89      0.89        66
+
+2025-04-23 10:16:01,530 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 10:16:29,772 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.7, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.9}
+2025-04-23 10:16:30,027 - INFO - Calibrated XGBoost model
+2025-04-23 10:16:30,046 - INFO - XGBoost Test Accuracy: 87.88%
+2025-04-23 10:16:30,046 - INFO - XGBoost ROC-AUC: 0.93
+2025-04-23 10:16:30,047 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.96      0.87        28
+           1       0.97      0.82      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-23 10:16:30,047 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-23 10:16:30,118 - INFO - Best hyperparameters for LogisticRegression: {'C': 1, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-23 10:16:30,141 - INFO - Calibrated LogisticRegression model
+2025-04-23 10:16:30,155 - INFO - LogisticRegression Test Accuracy: 87.88%
+2025-04-23 10:16:30,155 - INFO - LogisticRegression ROC-AUC: 0.93
+2025-04-23 10:16:30,155 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-23 10:16:30,155 - INFO - Best model: RandomForest with accuracy 89.39%
+2025-04-23 10:16:30,500 - INFO - Saved preprocessor and model to preprocessor.pkl and heart_attack_model.pkl
+2025-04-23 10:30:18,841 - DEBUG - Starting main function
+2025-04-23 10:30:18,841 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 10:30:18,841 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 10:30:18,848 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 10:30:18,850 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 10:30:18,853 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:30:18,866 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:30:18,914 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 10:30:18,915 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 10:30:18,916 - DEBUG - Starting model training
+2025-04-23 10:30:18,916 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 10:30:18,921 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 10:30:18,923 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 10:30:18,932 - INFO - Applied preprocessor to train and test sets
+2025-04-23 10:30:18,932 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 10:30:33,343 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-23 10:30:34,074 - INFO - Calibrated RandomForest model
+2025-04-23 10:30:34,180 - INFO - RandomForest Test Accuracy: 89.39%
+2025-04-23 10:30:34,181 - INFO - RandomForest ROC-AUC: 0.93
+2025-04-23 10:30:34,181 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.93      0.88        28
+           1       0.94      0.87      0.90        38
+
+    accuracy                           0.89        66
+   macro avg       0.89      0.90      0.89        66
+weighted avg       0.90      0.89      0.89        66
+
+2025-04-23 10:30:34,181 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 10:30:56,452 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.7, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.9}
+2025-04-23 10:30:57,674 - INFO - Calibrated XGBoost model
+2025-04-23 10:30:57,744 - INFO - XGBoost Test Accuracy: 87.88%
+2025-04-23 10:30:57,745 - INFO - XGBoost ROC-AUC: 0.93
+2025-04-23 10:30:57,745 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.96      0.87        28
+           1       0.97      0.82      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-23 10:30:57,745 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-23 10:30:57,906 - INFO - Best hyperparameters for LogisticRegression: {'C': 1, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-23 10:30:58,001 - INFO - Calibrated LogisticRegression model
+2025-04-23 10:30:58,052 - INFO - LogisticRegression Test Accuracy: 87.88%
+2025-04-23 10:30:58,052 - INFO - LogisticRegression ROC-AUC: 0.93
+2025-04-23 10:30:58,052 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-23 10:30:58,053 - INFO - Best model: RandomForest with accuracy 89.39%
+2025-04-23 10:30:58,862 - INFO - Saved preprocessor and model to preprocessor.pkl and heart_attack_model.pkl
+2025-04-23 10:36:07,194 - DEBUG - Starting main function
+2025-04-23 10:36:07,195 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 10:36:07,195 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 10:36:07,220 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 10:36:07,223 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 10:36:07,235 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:36:07,259 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:36:07,339 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 10:36:07,344 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 10:36:07,345 - DEBUG - Starting model training
+2025-04-23 10:36:07,347 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 10:36:07,363 - INFO - Applied SMOTE: 330 samples after resampling
+2025-04-23 10:36:07,372 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 10:36:07,409 - INFO - Applied preprocessor to train and test sets
+2025-04-23 10:36:07,410 - DEBUG - Starting GridSearchCV for RandomForest
+2025-04-23 10:36:25,113 - INFO - Best hyperparameters for RandomForest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-04-23 10:36:26,851 - INFO - Calibrated RandomForest model
+2025-04-23 10:36:27,007 - INFO - RandomForest Test Accuracy: 89.39%
+2025-04-23 10:36:27,008 - INFO - RandomForest ROC-AUC: 0.93
+2025-04-23 10:36:27,008 - INFO - RandomForest Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.93      0.88        28
+           1       0.94      0.87      0.90        38
+
+    accuracy                           0.89        66
+   macro avg       0.89      0.90      0.89        66
+weighted avg       0.90      0.89      0.89        66
+
+2025-04-23 10:36:27,008 - DEBUG - Starting GridSearchCV for XGBoost
+2025-04-23 10:36:44,901 - INFO - Best hyperparameters for XGBoost: {'colsample_bytree': 0.7, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.9}
+2025-04-23 10:36:45,260 - INFO - Calibrated XGBoost model
+2025-04-23 10:36:45,284 - INFO - XGBoost Test Accuracy: 87.88%
+2025-04-23 10:36:45,284 - INFO - XGBoost ROC-AUC: 0.93
+2025-04-23 10:36:45,284 - INFO - XGBoost Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.96      0.87        28
+           1       0.97      0.82      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-04-23 10:36:45,284 - DEBUG - Starting GridSearchCV for LogisticRegression
+2025-04-23 10:36:45,364 - INFO - Best hyperparameters for LogisticRegression: {'C': 1, 'penalty': 'l2', 'solver': 'liblinear'}
+2025-04-23 10:36:45,390 - INFO - Calibrated LogisticRegression model
+2025-04-23 10:36:45,402 - INFO - LogisticRegression Test Accuracy: 87.88%
+2025-04-23 10:36:45,402 - INFO - LogisticRegression ROC-AUC: 0.93
+2025-04-23 10:36:45,402 - INFO - LogisticRegression Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-23 10:36:45,402 - INFO - Best model: RandomForest with accuracy 89.39%
+2025-04-23 10:36:45,708 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-04-23 10:57:09,977 - DEBUG - Starting main function
+2025-04-23 10:57:09,979 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 10:57:09,979 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 10:57:10,014 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 10:57:10,016 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 10:57:10,022 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:57:10,047 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 10:57:10,113 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 10:57:10,118 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 10:57:10,118 - DEBUG - Starting model training
+2025-04-23 10:57:10,120 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 10:57:10,132 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 10:57:10,132 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 10:58:59,531 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 10:59:01,030 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 10:59:01,353 - INFO - RandomForest (sigmoid) Test Accuracy: 84.85%
+2025-04-23 10:59:01,353 - INFO - RandomForest (sigmoid) ROC-AUC: 0.93
+2025-04-23 10:59:01,353 - INFO - RandomForest (sigmoid) Brier Score: 0.1158
+2025-04-23 10:59:01,353 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 10:59:01,353 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 11:01:05,139 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 11:01:06,424 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 11:01:06,685 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 11:01:06,685 - INFO - RandomForest (isotonic) ROC-AUC: 0.94
+2025-04-23 11:01:06,685 - INFO - RandomForest (isotonic) Brier Score: 0.1111
+2025-04-23 11:01:06,685 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.79      0.84        33
+           1       0.81      0.91      0.86        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 11:01:06,687 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 11:03:12,340 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.2, 'classifier__max_depth': 9, 'classifier__n_estimators': 200, 'classifier__subsample': 0.6}
+2025-04-23 11:03:13,233 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 11:03:13,440 - INFO - XGBoost (sigmoid) Test Accuracy: 81.82%
+2025-04-23 11:03:13,440 - INFO - XGBoost (sigmoid) ROC-AUC: 0.89
+2025-04-23 11:03:13,440 - INFO - XGBoost (sigmoid) Brier Score: 0.1437
+2025-04-23 11:03:13,440 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 11:03:13,440 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 11:04:37,076 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.2, 'classifier__max_depth': 9, 'classifier__n_estimators': 200, 'classifier__subsample': 0.6}
+2025-04-23 11:04:37,958 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 11:04:38,165 - INFO - XGBoost (isotonic) Test Accuracy: 80.30%
+2025-04-23 11:04:38,165 - INFO - XGBoost (isotonic) ROC-AUC: 0.90
+2025-04-23 11:04:38,165 - INFO - XGBoost (isotonic) Brier Score: 0.1403
+2025-04-23 11:04:38,165 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.79      0.80        33
+           1       0.79      0.82      0.81        33
+
+    accuracy                           0.80        66
+   macro avg       0.80      0.80      0.80        66
+weighted avg       0.80      0.80      0.80        66
+
+2025-04-23 11:04:38,165 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 11:04:39,110 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 11:04:39,317 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 11:04:39,450 - INFO - LogisticRegression (sigmoid) Test Accuracy: 84.85%
+2025-04-23 11:04:39,450 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.93
+2025-04-23 11:04:39,450 - INFO - LogisticRegression (sigmoid) Brier Score: 0.1105
+2025-04-23 11:04:39,450 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 11:04:39,450 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 11:04:40,279 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 11:04:40,434 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 11:04:40,575 - INFO - LogisticRegression (isotonic) Test Accuracy: 83.33%
+2025-04-23 11:04:40,575 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.93
+2025-04-23 11:04:40,575 - INFO - LogisticRegression (isotonic) Brier Score: 0.1130
+2025-04-23 11:04:40,575 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.82      0.83        33
+           1       0.82      0.85      0.84        33
+
+    accuracy                           0.83        66
+   macro avg       0.83      0.83      0.83        66
+weighted avg       0.83      0.83      0.83        66
+
+2025-04-23 11:04:40,575 - DEBUG - Starting GridSearchCV for LightGBM with sigmoid
+2025-04-23 11:06:42,906 - DEBUG - Starting main function
+2025-04-23 11:06:42,906 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 11:06:42,906 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 11:06:42,916 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 11:06:42,917 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 11:06:42,920 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 11:06:42,928 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 11:06:42,970 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 11:06:42,970 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 11:06:42,970 - DEBUG - Starting model training
+2025-04-23 11:06:42,971 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 11:06:42,973 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 11:06:42,973 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 13:03:54,163 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 13:03:55,903 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 13:03:56,267 - INFO - RandomForest (sigmoid) Test Accuracy: 84.85%
+2025-04-23 13:03:56,267 - INFO - RandomForest (sigmoid) ROC-AUC: 0.93
+2025-04-23 13:03:56,267 - INFO - RandomForest (sigmoid) Brier Score: 0.1158
+2025-04-23 13:03:56,267 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:03:56,267 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 13:05:52,564 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 13:05:53,813 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 13:05:54,029 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 13:05:54,029 - INFO - RandomForest (isotonic) ROC-AUC: 0.94
+2025-04-23 13:05:54,029 - INFO - RandomForest (isotonic) Brier Score: 0.1111
+2025-04-23 13:05:54,029 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.79      0.84        33
+           1       0.81      0.91      0.86        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:05:54,030 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 13:07:30,891 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.2, 'classifier__max_depth': 9, 'classifier__n_estimators': 200, 'classifier__subsample': 0.6}
+2025-04-23 13:07:31,939 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 13:07:32,154 - INFO - XGBoost (sigmoid) Test Accuracy: 81.82%
+2025-04-23 13:07:32,155 - INFO - XGBoost (sigmoid) ROC-AUC: 0.89
+2025-04-23 13:07:32,155 - INFO - XGBoost (sigmoid) Brier Score: 0.1437
+2025-04-23 13:07:32,155 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 13:07:32,155 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 13:09:02,260 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.2, 'classifier__max_depth': 9, 'classifier__n_estimators': 200, 'classifier__subsample': 0.6}
+2025-04-23 13:09:03,290 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 13:09:03,553 - INFO - XGBoost (isotonic) Test Accuracy: 80.30%
+2025-04-23 13:09:03,553 - INFO - XGBoost (isotonic) ROC-AUC: 0.90
+2025-04-23 13:09:03,553 - INFO - XGBoost (isotonic) Brier Score: 0.1403
+2025-04-23 13:09:03,553 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.79      0.80        33
+           1       0.79      0.82      0.81        33
+
+    accuracy                           0.80        66
+   macro avg       0.80      0.80      0.80        66
+weighted avg       0.80      0.80      0.80        66
+
+2025-04-23 13:09:03,553 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 13:09:04,591 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 13:09:04,842 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 13:09:04,992 - INFO - LogisticRegression (sigmoid) Test Accuracy: 84.85%
+2025-04-23 13:09:04,992 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.93
+2025-04-23 13:09:04,992 - INFO - LogisticRegression (sigmoid) Brier Score: 0.1105
+2025-04-23 13:09:04,992 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:09:04,992 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 13:09:05,870 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 13:09:06,075 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 13:09:06,234 - INFO - LogisticRegression (isotonic) Test Accuracy: 83.33%
+2025-04-23 13:09:06,234 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.93
+2025-04-23 13:09:06,235 - INFO - LogisticRegression (isotonic) Brier Score: 0.1130
+2025-04-23 13:09:06,235 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.82      0.83        33
+           1       0.82      0.85      0.84        33
+
+    accuracy                           0.83        66
+   macro avg       0.83      0.83      0.83        66
+weighted avg       0.83      0.83      0.83        66
+
+2025-04-23 13:09:06,237 - DEBUG - Starting GridSearchCV for LightGBM with sigmoid
+2025-04-23 13:20:11,837 - INFO - Best hyperparameters for LightGBM: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.6}
+2025-04-23 13:20:12,304 - INFO - Calibrated LightGBM with sigmoid
+2025-04-23 13:20:12,550 - INFO - LightGBM (sigmoid) Test Accuracy: 80.30%
+2025-04-23 13:20:12,550 - INFO - LightGBM (sigmoid) ROC-AUC: 0.91
+2025-04-23 13:20:12,550 - INFO - LightGBM (sigmoid) Brier Score: 0.1304
+2025-04-23 13:20:12,550 - INFO - LightGBM (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.76      0.79        33
+           1       0.78      0.85      0.81        33
+
+    accuracy                           0.80        66
+   macro avg       0.81      0.80      0.80        66
+weighted avg       0.81      0.80      0.80        66
+
+2025-04-23 13:20:12,551 - DEBUG - Starting GridSearchCV for LightGBM with isotonic
+2025-04-23 13:21:50,406 - DEBUG - Starting main function
+2025-04-23 13:21:50,406 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 13:21:50,406 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 13:21:50,417 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 13:21:50,418 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 13:21:50,422 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:21:50,436 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:21:50,505 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 13:21:50,507 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 13:21:50,507 - DEBUG - Starting model training
+2025-04-23 13:21:50,508 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 13:21:50,513 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 13:21:50,514 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 13:21:56,961 - DEBUG - Starting main function
+2025-04-23 13:21:56,961 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 13:21:56,961 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 13:21:56,966 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 13:21:56,966 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 13:21:56,967 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:21:56,972 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:21:56,997 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 13:21:56,997 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 13:21:56,998 - DEBUG - Starting model training
+2025-04-23 13:21:56,998 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 13:21:57,000 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 13:21:57,000 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 13:24:43,351 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 13:24:46,589 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 13:24:47,492 - INFO - RandomForest (sigmoid) Test Accuracy: 84.85%
+2025-04-23 13:24:47,492 - INFO - RandomForest (sigmoid) ROC-AUC: 0.93
+2025-04-23 13:24:47,492 - INFO - RandomForest (sigmoid) Brier Score: 0.1158
+2025-04-23 13:24:47,493 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:24:47,493 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 13:28:38,265 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 13:28:39,829 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 13:28:40,187 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 13:28:40,188 - INFO - RandomForest (isotonic) ROC-AUC: 0.94
+2025-04-23 13:28:40,188 - INFO - RandomForest (isotonic) Brier Score: 0.1111
+2025-04-23 13:28:40,188 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.79      0.84        33
+           1       0.81      0.91      0.86        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:28:40,189 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 13:29:25,645 - DEBUG - Starting main function
+2025-04-23 13:29:25,645 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 13:29:25,645 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 13:29:25,653 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 13:29:25,654 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 13:29:25,658 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:29:25,671 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:29:25,712 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 13:29:25,714 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 13:29:25,714 - DEBUG - Starting model training
+2025-04-23 13:29:25,715 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 13:29:25,718 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 13:29:25,718 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 13:31:19,785 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 13:31:20,877 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 13:31:21,104 - INFO - RandomForest (sigmoid) Test Accuracy: 84.85%
+2025-04-23 13:31:21,105 - INFO - RandomForest (sigmoid) ROC-AUC: 0.93
+2025-04-23 13:31:21,105 - INFO - RandomForest (sigmoid) Brier Score: 0.1158
+2025-04-23 13:31:21,105 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:31:21,105 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 13:33:13,194 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 13:33:14,119 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 13:33:14,354 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 13:33:14,354 - INFO - RandomForest (isotonic) ROC-AUC: 0.94
+2025-04-23 13:33:14,354 - INFO - RandomForest (isotonic) Brier Score: 0.1111
+2025-04-23 13:33:14,354 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.79      0.84        33
+           1       0.81      0.91      0.86        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:33:14,355 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 13:35:13,175 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.2, 'classifier__max_depth': 9, 'classifier__n_estimators': 200, 'classifier__subsample': 0.6}
+2025-04-23 13:35:15,179 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 13:35:15,680 - INFO - XGBoost (sigmoid) Test Accuracy: 81.82%
+2025-04-23 13:35:15,680 - INFO - XGBoost (sigmoid) ROC-AUC: 0.89
+2025-04-23 13:35:15,680 - INFO - XGBoost (sigmoid) Brier Score: 0.1437
+2025-04-23 13:35:15,680 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 13:35:15,681 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 13:47:13,998 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.2, 'classifier__max_depth': 9, 'classifier__n_estimators': 200, 'classifier__subsample': 0.6}
+2025-04-23 13:47:15,845 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 13:47:16,338 - INFO - XGBoost (isotonic) Test Accuracy: 80.30%
+2025-04-23 13:47:16,338 - INFO - XGBoost (isotonic) ROC-AUC: 0.90
+2025-04-23 13:47:16,338 - INFO - XGBoost (isotonic) Brier Score: 0.1403
+2025-04-23 13:47:16,338 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.79      0.80        33
+           1       0.79      0.82      0.81        33
+
+    accuracy                           0.80        66
+   macro avg       0.80      0.80      0.80        66
+weighted avg       0.80      0.80      0.80        66
+
+2025-04-23 13:47:16,339 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 13:47:18,342 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 13:47:18,804 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 13:47:19,239 - INFO - LogisticRegression (sigmoid) Test Accuracy: 84.85%
+2025-04-23 13:47:19,239 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.93
+2025-04-23 13:47:19,239 - INFO - LogisticRegression (sigmoid) Brier Score: 0.1105
+2025-04-23 13:47:19,239 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 13:47:19,240 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 13:47:21,284 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 13:47:21,714 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 13:47:22,087 - INFO - LogisticRegression (isotonic) Test Accuracy: 83.33%
+2025-04-23 13:47:22,088 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.93
+2025-04-23 13:47:22,088 - INFO - LogisticRegression (isotonic) Brier Score: 0.1130
+2025-04-23 13:47:22,088 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.82      0.83        33
+           1       0.82      0.85      0.84        33
+
+    accuracy                           0.83        66
+   macro avg       0.83      0.83      0.83        66
+weighted avg       0.83      0.83      0.83        66
+
+2025-04-23 13:47:22,089 - INFO - Best model: RandomForest with isotonic calibration, accuracy 84.85%, ROC-AUC 0.94, Brier Score 0.1111
+2025-04-23 13:47:22,990 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-04-23 13:55:59,252 - DEBUG - Starting main function
+2025-04-23 13:55:59,253 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 13:55:59,253 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 13:55:59,256 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 13:55:59,257 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 13:55:59,258 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:55:59,262 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 13:55:59,283 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 13:55:59,283 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 13:55:59,283 - DEBUG - Starting model training
+2025-04-23 13:55:59,284 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 13:55:59,286 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 13:55:59,286 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 13:57:18,336 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 4, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 100}
+2025-04-23 13:57:19,102 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 13:57:19,277 - INFO - RandomForest (sigmoid) Test Accuracy: 81.82%
+2025-04-23 13:57:19,277 - INFO - RandomForest (sigmoid) ROC-AUC: 0.91
+2025-04-23 13:57:19,277 - INFO - RandomForest (sigmoid) Brier Score: 0.1227
+2025-04-23 13:57:19,277 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 13:57:19,277 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 13:58:35,457 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 4, 'classifier__min_samples_split': 2, 'classifier__n_estimators': 100}
+2025-04-23 13:58:36,773 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 13:58:36,944 - INFO - RandomForest (isotonic) Test Accuracy: 80.30%
+2025-04-23 13:58:36,944 - INFO - RandomForest (isotonic) ROC-AUC: 0.91
+2025-04-23 13:58:36,944 - INFO - RandomForest (isotonic) Brier Score: 0.1261
+2025-04-23 13:58:36,944 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.73      0.79        33
+           1       0.76      0.88      0.82        33
+
+    accuracy                           0.80        66
+   macro avg       0.81      0.80      0.80        66
+weighted avg       0.81      0.80      0.80        66
+
+2025-04-23 13:58:36,944 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 13:59:33,344 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 13:59:33,776 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 13:59:33,935 - INFO - XGBoost (sigmoid) Test Accuracy: 80.30%
+2025-04-23 13:59:33,935 - INFO - XGBoost (sigmoid) ROC-AUC: 0.90
+2025-04-23 13:59:33,935 - INFO - XGBoost (sigmoid) Brier Score: 0.1315
+2025-04-23 13:59:33,935 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.76      0.79        33
+           1       0.78      0.85      0.81        33
+
+    accuracy                           0.80        66
+   macro avg       0.81      0.80      0.80        66
+weighted avg       0.81      0.80      0.80        66
+
+2025-04-23 13:59:33,935 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 14:00:25,734 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.6, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 14:00:26,039 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 14:00:26,167 - INFO - XGBoost (isotonic) Test Accuracy: 81.82%
+2025-04-23 14:00:26,168 - INFO - XGBoost (isotonic) ROC-AUC: 0.91
+2025-04-23 14:00:26,168 - INFO - XGBoost (isotonic) Brier Score: 0.1270
+2025-04-23 14:00:26,168 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 14:00:26,168 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 14:00:26,821 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:00:26,921 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 14:00:26,994 - INFO - LogisticRegression (sigmoid) Test Accuracy: 84.85%
+2025-04-23 14:00:26,994 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.93
+2025-04-23 14:00:26,994 - INFO - LogisticRegression (sigmoid) Brier Score: 0.1094
+2025-04-23 14:00:26,994 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 14:00:26,995 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 14:00:27,616 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:00:27,717 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 14:00:27,801 - INFO - LogisticRegression (isotonic) Test Accuracy: 86.36%
+2025-04-23 14:00:27,801 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.92
+2025-04-23 14:00:27,801 - INFO - LogisticRegression (isotonic) Brier Score: 0.1133
+2025-04-23 14:00:27,801 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.82      0.86        33
+           1       0.83      0.91      0.87        33
+
+    accuracy                           0.86        66
+   macro avg       0.87      0.86      0.86        66
+weighted avg       0.87      0.86      0.86        66
+
+2025-04-23 14:00:27,801 - INFO - Best model: LogisticRegression with isotonic calibration, accuracy 86.36%, ROC-AUC 0.92, Brier Score 0.1133
+2025-04-23 14:00:27,814 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-04-23 14:06:28,738 - DEBUG - Starting main function
+2025-04-23 14:06:28,740 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 14:06:28,740 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 14:06:28,756 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 14:06:28,758 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 14:06:28,763 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 14:06:28,776 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 14:06:28,812 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 14:06:28,815 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 14:06:28,815 - DEBUG - Starting model training
+2025-04-23 14:06:28,816 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 14:06:28,823 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 14:06:28,823 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 14:06:46,833 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 14:06:47,662 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 14:06:47,784 - INFO - RandomForest (sigmoid) Test Accuracy: 83.33%
+2025-04-23 14:06:47,784 - INFO - RandomForest (sigmoid) ROC-AUC: 0.92
+2025-04-23 14:06:47,784 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.79      0.83        33
+           1       0.81      0.88      0.84        33
+
+    accuracy                           0.83        66
+   macro avg       0.84      0.83      0.83        66
+weighted avg       0.84      0.83      0.83        66
+
+2025-04-23 14:06:47,784 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 14:07:01,758 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 14:07:02,564 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 14:07:02,689 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 14:07:02,689 - INFO - RandomForest (isotonic) ROC-AUC: 0.92
+2025-04-23 14:07:02,690 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.79      0.84        33
+           1       0.81      0.91      0.86        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 14:07:02,691 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 14:07:23,281 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.7, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 14:07:23,648 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 14:07:23,739 - INFO - XGBoost (sigmoid) Test Accuracy: 78.79%
+2025-04-23 14:07:23,739 - INFO - XGBoost (sigmoid) ROC-AUC: 0.90
+2025-04-23 14:07:23,739 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.76      0.78        33
+           1       0.77      0.82      0.79        33
+
+    accuracy                           0.79        66
+   macro avg       0.79      0.79      0.79        66
+weighted avg       0.79      0.79      0.79        66
+
+2025-04-23 14:07:23,739 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 14:07:42,676 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.7, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 14:07:42,959 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 14:07:43,038 - INFO - XGBoost (isotonic) Test Accuracy: 81.82%
+2025-04-23 14:07:43,039 - INFO - XGBoost (isotonic) ROC-AUC: 0.90
+2025-04-23 14:07:43,039 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.82      0.82        33
+           1       0.82      0.82      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 14:07:43,039 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 14:07:43,262 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:07:43,398 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 14:07:43,470 - INFO - LogisticRegression (sigmoid) Test Accuracy: 84.85%
+2025-04-23 14:07:43,470 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.93
+2025-04-23 14:07:43,470 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 14:07:43,472 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 14:07:43,657 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:07:43,755 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 14:07:43,820 - INFO - LogisticRegression (isotonic) Test Accuracy: 86.36%
+2025-04-23 14:07:43,820 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.92
+2025-04-23 14:07:43,820 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.82      0.86        33
+           1       0.83      0.91      0.87        33
+
+    accuracy                           0.86        66
+   macro avg       0.87      0.86      0.86        66
+weighted avg       0.87      0.86      0.86        66
+
+2025-04-23 14:07:43,820 - INFO - Best model: LogisticRegression with isotonic calibration, accuracy 86.36%, ROC-AUC 0.92
+2025-04-23 14:07:43,831 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-04-23 14:48:07,679 - DEBUG - Starting main function
+2025-04-23 14:48:07,680 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 14:48:07,680 - DEBUG - Attempting to load data from D:Ip @\heart.csv
+2025-04-23 14:48:07,681 - ERROR - Dataset file not found: D:Ip @\heart.csv
+2025-04-23 14:48:07,681 - ERROR - Failed to load and clean data: Dataset file not found: D:Ip @\heart.csv
+2025-04-23 14:48:07,681 - ERROR - Training failed: Dataset file not found: D:Ip @\heart.csv
+2025-04-23 14:50:40,066 - DEBUG - Starting main function
+2025-04-23 14:50:40,066 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 14:50:40,066 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 14:50:40,082 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 14:50:40,086 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 14:50:40,092 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 14:50:40,108 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 14:50:40,172 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 14:50:40,177 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 14:50:40,177 - DEBUG - Starting model training
+2025-04-23 14:50:40,178 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 14:50:40,189 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 14:50:40,209 - INFO - Fitted preprocessor on training data
+2025-04-23 14:50:40,209 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 14:50:54,781 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 14:50:55,666 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 14:50:55,898 - INFO - RandomForest (sigmoid) Test Accuracy: 83.33%
+2025-04-23 14:50:55,898 - INFO - RandomForest (sigmoid) ROC-AUC: 0.92
+2025-04-23 14:50:55,899 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.79      0.83        33
+           1       0.81      0.88      0.84        33
+
+    accuracy                           0.83        66
+   macro avg       0.84      0.83      0.83        66
+weighted avg       0.84      0.83      0.83        66
+
+2025-04-23 14:50:55,899 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 14:51:10,216 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 14:51:11,560 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 14:51:11,698 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 14:51:11,698 - INFO - RandomForest (isotonic) ROC-AUC: 0.92
+2025-04-23 14:51:11,698 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.79      0.84        33
+           1       0.81      0.91      0.86        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 14:51:11,698 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 14:51:32,552 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.7, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 14:51:32,879 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 14:51:32,971 - INFO - XGBoost (sigmoid) Test Accuracy: 78.79%
+2025-04-23 14:51:32,971 - INFO - XGBoost (sigmoid) ROC-AUC: 0.90
+2025-04-23 14:51:32,971 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.76      0.78        33
+           1       0.77      0.82      0.79        33
+
+    accuracy                           0.79        66
+   macro avg       0.79      0.79      0.79        66
+weighted avg       0.79      0.79      0.79        66
+
+2025-04-23 14:51:32,971 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 14:51:53,386 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.7, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 14:51:53,725 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 14:51:53,843 - INFO - XGBoost (isotonic) Test Accuracy: 81.82%
+2025-04-23 14:51:53,843 - INFO - XGBoost (isotonic) ROC-AUC: 0.90
+2025-04-23 14:51:53,843 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.82      0.82        33
+           1       0.82      0.82      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 14:51:53,844 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 14:51:54,062 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:51:54,243 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 14:51:54,341 - INFO - LogisticRegression (sigmoid) Test Accuracy: 84.85%
+2025-04-23 14:51:54,341 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.93
+2025-04-23 14:51:54,341 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 14:51:54,342 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 14:51:54,521 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:51:54,698 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 14:51:54,790 - INFO - LogisticRegression (isotonic) Test Accuracy: 86.36%
+2025-04-23 14:51:54,790 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.92
+2025-04-23 14:51:54,790 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.82      0.86        33
+           1       0.83      0.91      0.87        33
+
+    accuracy                           0.86        66
+   macro avg       0.87      0.86      0.86        66
+weighted avg       0.87      0.86      0.86        66
+
+2025-04-23 14:51:54,790 - INFO - Best model: LogisticRegression with isotonic calibration, accuracy 86.36%, ROC-AUC 0.92
+2025-04-23 14:51:54,809 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-04-23 14:57:15,077 - DEBUG - Starting main function
+2025-04-23 14:57:15,077 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 14:57:15,078 - DEBUG - Attempting to load data from heart.csv
+2025-04-23 14:57:15,112 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 14:57:15,117 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 14:57:15,119 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 14:57:15,129 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 14:57:15,156 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 14:57:15,157 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 14:57:15,157 - DEBUG - Starting model training
+2025-04-23 14:57:15,158 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 14:57:15,159 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 14:57:15,166 - INFO - Fitted preprocessor on training data
+2025-04-23 14:57:15,166 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 14:57:47,155 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 14:57:48,020 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 14:57:48,177 - INFO - RandomForest (sigmoid) Test Accuracy: 83.33%
+2025-04-23 14:57:48,177 - INFO - RandomForest (sigmoid) ROC-AUC: 0.92
+2025-04-23 14:57:48,177 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.79      0.83        33
+           1       0.81      0.88      0.84        33
+
+    accuracy                           0.83        66
+   macro avg       0.84      0.83      0.83        66
+weighted avg       0.84      0.83      0.83        66
+
+2025-04-23 14:57:48,177 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 14:58:01,045 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 5, 'classifier__n_estimators': 100}
+2025-04-23 14:58:01,825 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 14:58:01,981 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 14:58:01,981 - INFO - RandomForest (isotonic) ROC-AUC: 0.92
+2025-04-23 14:58:01,981 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.79      0.84        33
+           1       0.81      0.91      0.86        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 14:58:01,982 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 14:58:24,421 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.7, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 14:58:24,746 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 14:58:24,839 - INFO - XGBoost (sigmoid) Test Accuracy: 78.79%
+2025-04-23 14:58:24,840 - INFO - XGBoost (sigmoid) ROC-AUC: 0.90
+2025-04-23 14:58:24,840 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.76      0.78        33
+           1       0.77      0.82      0.79        33
+
+    accuracy                           0.79        66
+   macro avg       0.79      0.79      0.79        66
+weighted avg       0.79      0.79      0.79        66
+
+2025-04-23 14:58:24,840 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 14:58:47,917 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.7, 'classifier__learning_rate': 0.05, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__subsample': 0.8}
+2025-04-23 14:58:48,282 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 14:58:48,405 - INFO - XGBoost (isotonic) Test Accuracy: 81.82%
+2025-04-23 14:58:48,405 - INFO - XGBoost (isotonic) ROC-AUC: 0.90
+2025-04-23 14:58:48,406 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.82      0.82        33
+           1       0.82      0.82      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 14:58:48,406 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 14:58:48,650 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:58:48,798 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 14:58:48,942 - INFO - LogisticRegression (sigmoid) Test Accuracy: 84.85%
+2025-04-23 14:58:48,942 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.93
+2025-04-23 14:58:48,942 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.82      0.84        33
+           1       0.83      0.88      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 14:58:48,973 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 14:58:49,246 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'lbfgs'}
+2025-04-23 14:58:49,423 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 14:58:49,512 - INFO - LogisticRegression (isotonic) Test Accuracy: 86.36%
+2025-04-23 14:58:49,512 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.92
+2025-04-23 14:58:49,512 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.82      0.86        33
+           1       0.83      0.91      0.87        33
+
+    accuracy                           0.86        66
+   macro avg       0.87      0.86      0.86        66
+weighted avg       0.87      0.86      0.86        66
+
+2025-04-23 14:58:49,513 - INFO - Best model: LogisticRegression with isotonic calibration, accuracy 86.36%, ROC-AUC 0.92
+2025-04-23 14:58:49,569 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-04-23 15:11:23,408 - DEBUG - Starting main function
+2025-04-23 15:11:23,409 - WARNING - Project directory contains spaces: D:\Ip @
+2025-04-23 15:11:23,409 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-04-23 15:11:23,417 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-23 15:11:23,421 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-23 15:11:23,425 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 15:11:23,435 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-23 15:11:23,480 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-23 15:11:23,481 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-23 15:11:23,481 - DEBUG - Starting model training
+2025-04-23 15:11:23,482 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-23 15:11:23,484 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-23 15:11:23,493 - INFO - Fitted preprocessor on training data
+2025-04-23 15:11:23,493 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-04-23 15:16:49,578 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 500, 'selector__k': 12}
+2025-04-23 15:16:54,876 - INFO - Calibrated RandomForest with sigmoid
+2025-04-23 15:16:55,352 - INFO - RandomForest (sigmoid) Test Accuracy: 83.33%
+2025-04-23 15:16:55,352 - INFO - RandomForest (sigmoid) ROC-AUC: 0.90
+2025-04-23 15:16:55,352 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.85      0.84        33
+           1       0.84      0.82      0.83        33
+
+    accuracy                           0.83        66
+   macro avg       0.83      0.83      0.83        66
+weighted avg       0.83      0.83      0.83        66
+
+2025-04-23 15:16:55,355 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-04-23 15:25:02,951 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 500, 'selector__k': 12}
+2025-04-23 15:25:15,121 - INFO - Calibrated RandomForest with isotonic
+2025-04-23 15:25:16,383 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-04-23 15:25:16,383 - INFO - RandomForest (isotonic) ROC-AUC: 0.89
+2025-04-23 15:25:16,383 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.85      0.85        33
+           1       0.85      0.85      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 15:25:16,405 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-04-23 15:31:20,606 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.8, 'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 300, 'classifier__subsample': 0.6, 'selector__k': 12}
+2025-04-23 15:31:22,251 - INFO - Calibrated XGBoost with sigmoid
+2025-04-23 15:31:22,443 - INFO - XGBoost (sigmoid) Test Accuracy: 81.82%
+2025-04-23 15:31:22,443 - INFO - XGBoost (sigmoid) ROC-AUC: 0.88
+2025-04-23 15:31:22,444 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 15:31:22,444 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-04-23 15:37:05,197 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.8, 'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 300, 'classifier__subsample': 0.6, 'selector__k': 12}
+2025-04-23 15:37:06,871 - INFO - Calibrated XGBoost with isotonic
+2025-04-23 15:37:07,152 - INFO - XGBoost (isotonic) Test Accuracy: 81.82%
+2025-04-23 15:37:07,152 - INFO - XGBoost (isotonic) ROC-AUC: 0.88
+2025-04-23 15:37:07,152 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 15:37:07,152 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-04-23 15:37:10,771 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear', 'selector__k': 10}
+2025-04-23 15:37:11,080 - INFO - Calibrated LogisticRegression with sigmoid
+2025-04-23 15:37:11,275 - INFO - LogisticRegression (sigmoid) Test Accuracy: 81.82%
+2025-04-23 15:37:11,278 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.91
+2025-04-23 15:37:11,278 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.85      0.82        33
+           1       0.84      0.79      0.81        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-04-23 15:37:11,279 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-04-23 15:37:14,482 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear', 'selector__k': 10}
+2025-04-23 15:37:14,805 - INFO - Calibrated LogisticRegression with isotonic
+2025-04-23 15:37:15,001 - INFO - LogisticRegression (isotonic) Test Accuracy: 84.85%
+2025-04-23 15:37:15,001 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.91
+2025-04-23 15:37:15,001 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.85      0.85        33
+           1       0.85      0.85      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-04-23 15:37:15,036 - INFO - Best model: LogisticRegression with isotonic calibration, accuracy 84.85%, ROC-AUC 0.91
+2025-04-23 15:37:15,076 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-05-07 14:49:38,515 - DEBUG - Starting main function
+2025-05-07 14:49:38,518 - WARNING - Project directory contains spaces: D:\Ip @
+2025-05-07 14:49:38,518 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 14:49:38,597 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 14:49:38,610 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 14:49:38,623 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 14:49:38,656 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 14:49:38,827 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 14:49:38,830 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-05-07 14:49:38,830 - DEBUG - Starting model training
+2025-05-07 14:49:38,832 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-05-07 14:49:38,862 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-05-07 14:49:38,892 - INFO - Fitted preprocessor on training data
+2025-05-07 14:49:38,893 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-05-07 15:09:18,638 - DEBUG - Starting main function
+2025-05-07 15:09:18,639 - WARNING - Project directory contains spaces: D:\Ip @
+2025-05-07 15:09:18,640 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 15:09:18,682 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 15:09:18,695 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 15:09:18,704 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 15:09:18,729 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 15:09:18,826 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 15:09:18,831 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-05-07 15:09:18,831 - DEBUG - Starting model training
+2025-05-07 15:09:18,833 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-05-07 15:09:18,849 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-05-07 15:09:18,883 - INFO - Fitted preprocessor on training data
+2025-05-07 15:09:18,884 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-05-07 15:17:51,401 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 500, 'selector__k': 12}
+2025-05-07 15:18:04,388 - INFO - Calibrated RandomForest with sigmoid
+2025-05-07 15:18:05,717 - INFO - RandomForest (sigmoid) Test Accuracy: 83.33%
+2025-05-07 15:18:05,717 - INFO - RandomForest (sigmoid) ROC-AUC: 0.90
+2025-05-07 15:18:05,718 - INFO - RandomForest (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.85      0.84        33
+           1       0.84      0.82      0.83        33
+
+    accuracy                           0.83        66
+   macro avg       0.83      0.83      0.83        66
+weighted avg       0.83      0.83      0.83        66
+
+2025-05-07 15:18:05,718 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-05-07 15:24:53,254 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 500, 'selector__k': 12}
+2025-05-07 15:24:58,012 - INFO - Calibrated RandomForest with isotonic
+2025-05-07 15:24:58,657 - INFO - RandomForest (isotonic) Test Accuracy: 84.85%
+2025-05-07 15:24:58,657 - INFO - RandomForest (isotonic) ROC-AUC: 0.89
+2025-05-07 15:24:58,657 - INFO - RandomForest (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.85      0.85        33
+           1       0.85      0.85      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-05-07 15:24:58,662 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-05-07 15:28:22,138 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.8, 'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 300, 'classifier__subsample': 0.6, 'selector__k': 12}
+2025-05-07 15:28:23,526 - INFO - Calibrated XGBoost with sigmoid
+2025-05-07 15:28:23,758 - INFO - XGBoost (sigmoid) Test Accuracy: 81.82%
+2025-05-07 15:28:23,758 - INFO - XGBoost (sigmoid) ROC-AUC: 0.88
+2025-05-07 15:28:23,758 - INFO - XGBoost (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-05-07 15:28:23,759 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-05-07 15:31:54,250 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.8, 'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 300, 'classifier__subsample': 0.6, 'selector__k': 12}
+2025-05-07 15:31:55,694 - INFO - Calibrated XGBoost with isotonic
+2025-05-07 15:31:55,831 - INFO - XGBoost (isotonic) Test Accuracy: 81.82%
+2025-05-07 15:31:55,831 - INFO - XGBoost (isotonic) ROC-AUC: 0.88
+2025-05-07 15:31:55,831 - INFO - XGBoost (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-05-07 15:31:55,832 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-05-07 15:31:57,888 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear', 'selector__k': 10}
+2025-05-07 15:31:58,107 - INFO - Calibrated LogisticRegression with sigmoid
+2025-05-07 15:31:58,236 - INFO - LogisticRegression (sigmoid) Test Accuracy: 81.82%
+2025-05-07 15:31:58,236 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.91
+2025-05-07 15:31:58,236 - INFO - LogisticRegression (sigmoid) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.85      0.82        33
+           1       0.84      0.79      0.81        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-05-07 15:31:58,237 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-05-07 15:32:00,022 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear', 'selector__k': 10}
+2025-05-07 15:32:00,173 - INFO - Calibrated LogisticRegression with isotonic
+2025-05-07 15:32:00,273 - INFO - LogisticRegression (isotonic) Test Accuracy: 84.85%
+2025-05-07 15:32:00,273 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.91
+2025-05-07 15:32:00,273 - INFO - LogisticRegression (isotonic) Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.85      0.85        33
+           1       0.85      0.85      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-05-07 15:32:00,279 - INFO - Best model: LogisticRegression with isotonic calibration, accuracy 84.85%, ROC-AUC 0.91
+2025-05-07 15:32:00,310 - INFO - Saved model and preprocessor to heart_attack_model.pkl and preprocessor.pkl
+2025-05-07 15:32:26,212 - DEBUG - Starting main function
+2025-05-07 15:32:26,212 - WARNING - Project directory contains spaces: D:\Ip @
+2025-05-07 15:32:26,212 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 15:32:26,222 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 15:32:26,227 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 15:32:26,229 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 15:32:26,237 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 15:32:26,277 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 15:32:26,279 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-05-07 15:32:26,279 - DEBUG - Starting model training
+2025-05-07 15:32:26,280 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-05-07 15:32:26,284 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-05-07 15:32:26,297 - INFO - Fitted preprocessor on training data
+2025-05-07 15:32:26,298 - DEBUG - Starting GridSearchCV for RandomForest with sigmoid
+2025-05-07 15:36:45,929 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 500, 'selector__k': 12}
+2025-05-07 15:36:50,301 - INFO - Calibrated RandomForest with sigmoid
+2025-05-07 15:36:50,737 - INFO - RandomForest (sigmoid) Accuracy: 83.33%
+2025-05-07 15:36:50,737 - INFO - RandomForest (sigmoid) ROC-AUC: 0.90
+2025-05-07 15:36:50,738 - INFO - RandomForest (sigmoid) Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.85      0.84        33
+           1       0.84      0.82      0.83        33
+
+    accuracy                           0.83        66
+   macro avg       0.83      0.83      0.83        66
+weighted avg       0.83      0.83      0.83        66
+
+2025-05-07 15:36:50,738 - DEBUG - Starting GridSearchCV for RandomForest with isotonic
+2025-05-07 15:41:31,285 - INFO - Best hyperparameters for RandomForest: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 1, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 500, 'selector__k': 12}
+2025-05-07 15:41:34,739 - INFO - Calibrated RandomForest with isotonic
+2025-05-07 15:41:35,157 - INFO - RandomForest (isotonic) Accuracy: 84.85%
+2025-05-07 15:41:35,157 - INFO - RandomForest (isotonic) ROC-AUC: 0.89
+2025-05-07 15:41:35,157 - INFO - RandomForest (isotonic) Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.85      0.85        33
+           1       0.85      0.85      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-05-07 15:41:35,161 - DEBUG - Starting GridSearchCV for XGBoost with sigmoid
+2025-05-07 15:44:41,581 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.8, 'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 300, 'classifier__subsample': 0.6, 'selector__k': 12}
+2025-05-07 15:44:42,281 - INFO - Calibrated XGBoost with sigmoid
+2025-05-07 15:44:42,401 - INFO - XGBoost (sigmoid) Accuracy: 81.82%
+2025-05-07 15:44:42,402 - INFO - XGBoost (sigmoid) ROC-AUC: 0.88
+2025-05-07 15:44:42,402 - INFO - XGBoost (sigmoid) Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-05-07 15:44:42,402 - DEBUG - Starting GridSearchCV for XGBoost with isotonic
+2025-05-07 15:47:46,814 - INFO - Best hyperparameters for XGBoost: {'classifier__colsample_bytree': 0.8, 'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 300, 'classifier__subsample': 0.6, 'selector__k': 12}
+2025-05-07 15:47:47,992 - INFO - Calibrated XGBoost with isotonic
+2025-05-07 15:47:48,125 - INFO - XGBoost (isotonic) Accuracy: 81.82%
+2025-05-07 15:47:48,125 - INFO - XGBoost (isotonic) ROC-AUC: 0.88
+2025-05-07 15:47:48,125 - INFO - XGBoost (isotonic) Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.79      0.81        33
+           1       0.80      0.85      0.82        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-05-07 15:47:48,125 - DEBUG - Starting GridSearchCV for LogisticRegression with sigmoid
+2025-05-07 15:47:50,131 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear', 'selector__k': 10}
+2025-05-07 15:47:50,299 - INFO - Calibrated LogisticRegression with sigmoid
+2025-05-07 15:47:50,382 - INFO - LogisticRegression (sigmoid) Accuracy: 81.82%
+2025-05-07 15:47:50,383 - INFO - LogisticRegression (sigmoid) ROC-AUC: 0.91
+2025-05-07 15:47:50,383 - INFO - LogisticRegression (sigmoid) Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.85      0.82        33
+           1       0.84      0.79      0.81        33
+
+    accuracy                           0.82        66
+   macro avg       0.82      0.82      0.82        66
+weighted avg       0.82      0.82      0.82        66
+
+2025-05-07 15:47:50,383 - DEBUG - Starting GridSearchCV for LogisticRegression with isotonic
+2025-05-07 19:28:52,563 - INFO - Best hyperparameters for LogisticRegression: {'classifier__C': 0.1, 'classifier__penalty': 'l2', 'classifier__solver': 'liblinear', 'selector__k': 10}
+2025-05-07 19:28:52,731 - INFO - Calibrated LogisticRegression with isotonic
+2025-05-07 19:28:53,135 - INFO - LogisticRegression (isotonic) Accuracy: 84.85%
+2025-05-07 19:28:53,135 - INFO - LogisticRegression (isotonic) ROC-AUC: 0.91
+2025-05-07 19:28:53,135 - INFO - LogisticRegression (isotonic) Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.85      0.85        33
+           1       0.85      0.85      0.85        33
+
+    accuracy                           0.85        66
+   macro avg       0.85      0.85      0.85        66
+weighted avg       0.85      0.85      0.85        66
+
+2025-05-07 19:28:53,150 - INFO - Best model: LogisticRegression with isotonic calibration, accuracy 84.85%, ROC-AUC 0.91
+2025-05-07 19:28:53,233 - INFO - Saved model and preprocessor
+2025-05-07 21:17:57,480 - DEBUG - Starting main function
+2025-05-07 21:17:57,480 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 21:17:57,493 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 21:17:57,494 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 21:17:57,540 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 21:17:57,540 - DEBUG - Starting model training
+2025-05-07 21:17:57,683 - INFO - Model training completed
+2025-05-07 21:17:57,713 - INFO - Saved model and preprocessor
+2025-05-07 21:27:26,210 - DEBUG - Starting main function
+2025-05-07 21:27:26,210 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 21:27:26,219 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 21:27:26,220 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 21:27:26,248 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 21:27:26,248 - DEBUG - Starting model training
+2025-05-07 21:27:26,364 - INFO - Model training completed
+2025-05-07 21:27:26,395 - INFO - Saved model and preprocessor
+2025-05-07 21:33:34,926 - DEBUG - Starting main function
+2025-05-07 21:33:34,926 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 21:33:34,935 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 21:33:34,936 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 21:33:34,971 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 21:33:34,971 - DEBUG - Starting model training
+2025-05-07 21:33:35,119 - INFO - Model training completed
+2025-05-07 21:33:35,153 - INFO - Saved model and preprocessor
+2025-05-07 21:35:28,327 - DEBUG - Starting main function
+2025-05-07 21:35:28,328 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 21:35:28,330 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 21:35:28,331 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 21:35:28,352 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 21:35:28,352 - DEBUG - Starting model training
+2025-05-07 21:35:28,449 - INFO - Model training completed
+2025-05-07 21:35:28,470 - INFO - Saved model and preprocessor
+2025-05-07 21:45:40,280 - DEBUG - Starting main function
+2025-05-07 21:45:40,280 - DEBUG - Attempting to load data from D:\Ip @\heart.csv
+2025-05-07 21:45:40,291 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 21:45:40,292 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 21:45:40,329 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 21:45:40,329 - DEBUG - Starting model training
+2025-05-07 21:45:40,451 - INFO - Model training completed
+2025-05-07 21:45:40,484 - INFO - Saved model and preprocessor
+2025-05-07 22:01:37,738 - WARNING - Project directory contains spaces: D:\Ip @
+2025-05-07 22:01:37,747 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 22:01:37,747 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 22:01:37,750 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 22:01:37,754 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 22:01:37,785 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 22:01:37,789 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-05-07 22:01:37,789 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-05-07 22:01:37,794 - INFO - Applied SMOTE: 330 samples after resampling
+2025-05-07 22:01:37,798 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-05-07 22:01:37,800 - INFO - Applied StandardScaler to features
+2025-05-07 22:01:54,981 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-05-07 22:01:54,993 - INFO - Train Accuracy: 96.97%
+2025-05-07 22:01:54,993 - INFO - Test Accuracy: 87.88%
+2025-05-07 22:01:54,993 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-05-07 22:01:55,001 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-05-07 22:12:20,481 - WARNING - Project directory contains spaces: D:\Ip @
+2025-05-07 22:12:20,494 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-07 22:12:20,498 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-07 22:12:20,504 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 22:12:20,510 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-07 22:12:20,538 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-07 22:12:20,540 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-05-07 22:12:20,541 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-05-07 22:12:20,546 - INFO - Applied SMOTE: 330 samples after resampling
+2025-05-07 22:12:20,549 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-05-07 22:12:20,551 - INFO - Applied StandardScaler to features
+2025-05-07 22:12:40,193 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-05-07 22:12:40,208 - INFO - Train Accuracy: 96.97%
+2025-05-07 22:12:40,208 - INFO - Test Accuracy: 87.88%
+2025-05-07 22:12:40,208 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-05-07 22:12:40,215 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-05-08 09:47:43,544 - WARNING - Project directory contains spaces: D:\Ip @
+2025-05-08 09:47:43,575 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-05-08 09:47:43,579 - INFO - Rounded oldpeak to 1 decimal place
+2025-05-08 09:47:43,588 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-08 09:47:43,596 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-05-08 09:47:43,641 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-05-08 09:47:43,646 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-05-08 09:47:43,649 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-05-08 09:47:43,659 - INFO - Applied SMOTE: 330 samples after resampling
+2025-05-08 09:47:43,665 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-05-08 09:47:43,674 - INFO - Applied StandardScaler to features
+2025-05-08 09:48:09,863 - INFO - Best hyperparameters: {'colsample_bytree': 1.0, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'reg_lambda': 2, 'subsample': 1.0}
+2025-05-08 09:48:09,883 - INFO - Train Accuracy: 96.97%
+2025-05-08 09:48:09,884 - INFO - Test Accuracy: 87.88%
+2025-05-08 09:48:09,884 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        28
+           1       0.94      0.84      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.89      0.88        66
+weighted avg       0.89      0.88      0.88        66
+
+2025-05-08 09:48:09,892 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl

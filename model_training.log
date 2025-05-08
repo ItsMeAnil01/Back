@@ -65,3 +65,271 @@ Name: count, dtype: int64
 weighted avg       0.88      0.88      0.88        66
 
 2025-04-20 09:02:17,522 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 19:08:39,568 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 19:08:39,576 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 19:08:39,577 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 19:08:39,580 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:08:39,591 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:08:39,630 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 19:08:39,633 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 19:08:39,634 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 19:08:39,637 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 19:08:39,643 - INFO - Applied StandardScaler to features
+2025-04-22 19:08:39,720 - INFO - Trained logistic regression model
+2025-04-22 19:08:39,732 - INFO - Train Accuracy: 87.50%
+2025-04-22 19:08:39,733 - INFO - Test Accuracy: 87.88%
+2025-04-22 19:08:39,733 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-22 19:08:39,735 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 19:39:18,173 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 19:39:18,180 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 19:39:18,181 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 19:39:18,184 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:39:18,194 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 19:39:18,359 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 19:39:18,361 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 19:39:18,362 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 19:39:18,365 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 19:39:18,371 - INFO - Applied StandardScaler to features
+2025-04-22 19:39:18,449 - INFO - Trained logistic regression model
+2025-04-22 19:39:18,465 - INFO - Train Accuracy: 87.50%
+2025-04-22 19:39:18,466 - INFO - Test Accuracy: 87.88%
+2025-04-22 19:39:18,466 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-22 19:39:18,470 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 21:47:33,548 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 21:47:33,572 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 21:47:33,574 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 21:47:33,577 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:47:33,590 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 21:47:33,720 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 21:47:33,721 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 21:47:33,722 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 21:47:33,726 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 21:47:33,734 - INFO - Applied StandardScaler to features
+2025-04-22 21:47:33,780 - INFO - Trained logistic regression model
+2025-04-22 21:47:33,801 - INFO - Train Accuracy: 87.50%
+2025-04-22 21:47:33,801 - INFO - Test Accuracy: 87.88%
+2025-04-22 21:47:33,801 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-22 21:47:33,844 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
+2025-04-22 22:06:08,613 - WARNING - Project directory contains spaces: D:\Ip @. Consider renaming to avoid issues.
+2025-04-22 22:06:08,619 - INFO - Loaded dataset with 330 rows and 16 columns
+2025-04-22 22:06:08,620 - INFO - Rounded oldpeak to 1 decimal place
+2025-04-22 22:06:08,622 - INFO - Missing values before imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:06:08,632 - INFO - Missing values after imputation:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+dtype: int64
+2025-04-22 22:06:08,724 - INFO - Dataset summary:
+              age         sex          cp  ...       slope          ca        thal
+count  330.000000  330.000000  330.000000  ...  330.000000  330.000000  330.000000
+mean    54.584848    0.684848    0.900000  ...    1.357576    0.733333    2.287879
+std      8.908540    0.465282    1.019118  ...    0.618376    0.999291    0.622895
+min     29.000000    0.000000    0.000000  ...    0.000000    0.000000    0.000000
+25%     48.000000    0.000000    0.000000  ...    1.000000    0.000000    2.000000
+50%     56.000000    1.000000    0.000000  ...    1.000000    0.000000    2.000000
+75%     61.000000    1.000000    2.000000  ...    2.000000    1.000000    3.000000
+max     77.000000    1.000000    3.000000  ...    2.000000    4.000000    3.000000
+
+[8 rows x 13 columns]
+2025-04-22 22:06:08,733 - INFO - Target distribution:
+target
+1    165
+0    165
+Name: count, dtype: int64
+2025-04-22 22:06:08,734 - INFO - Using features: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+2025-04-22 22:06:08,738 - INFO - Train set: 264 samples, Test set: 66 samples
+2025-04-22 22:06:08,744 - INFO - Applied StandardScaler to features
+2025-04-22 22:06:08,784 - INFO - Trained logistic regression model
+2025-04-22 22:06:08,800 - INFO - Train Accuracy: 87.50%
+2025-04-22 22:06:08,800 - INFO - Test Accuracy: 87.88%
+2025-04-22 22:06:08,800 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.89      0.86        28
+           1       0.92      0.87      0.89        38
+
+    accuracy                           0.88        66
+   macro avg       0.88      0.88      0.88        66
+weighted avg       0.88      0.88      0.88        66
+
+2025-04-22 22:06:08,805 - INFO - Saved model and scaler to heart_attack_model.pkl and scaler.pkl
