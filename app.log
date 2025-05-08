@@ -1844,3 +1844,23 @@
 2025-05-07 22:12:33,511 - INFO - Prediction: {'Heart Attack Risk': '27.20%'}
 2025-05-07 22:12:33,512 - INFO - 127.0.0.1 - - [07/May/2025 22:12:33] "POST /predict HTTP/1.1" 200 -
 2025-05-07 22:12:54,591 - INFO - 127.0.0.1 - - [07/May/2025 22:12:54] "OPTIONS /predict HTTP/1.1" 200 -
+2025-05-08 09:49:25,732 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: 1.0.0
+2025-05-08 09:49:25,735 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-05-08 09:49:25,792 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-08 09:49:25,792 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 09:49:25,795 - INFO -  * Restarting with stat
+2025-05-08 09:49:28,161 - INFO - Model and scaler loaded successfully. Model type: XGBClassifier, Version: 1.0.0
+2025-05-08 09:49:28,162 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-05-08 09:49:28,181 - WARNING -  * Debugger is active!
+2025-05-08 09:49:28,189 - INFO -  * Debugger PIN: 901-140-241
+2025-05-08 09:50:16,601 - INFO - Accessed root endpoint
+2025-05-08 09:50:16,602 - INFO - 127.0.0.1 - - [08/May/2025 09:50:16] "GET / HTTP/1.1" 200 -
+2025-05-08 09:50:16,622 - INFO - Accessed root endpoint
+2025-05-08 09:50:16,623 - INFO - 127.0.0.1 - - [08/May/2025 09:50:16] "GET / HTTP/1.1" 200 -
+2025-05-08 09:50:16,683 - INFO - 127.0.0.1 - - [08/May/2025 09:50:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-08 09:50:30,459 - INFO - 127.0.0.1 - - [08/May/2025 09:50:30] "OPTIONS /predict HTTP/1.1" 200 -
+2025-05-08 09:50:39,072 - INFO - 127.0.0.1 - - [08/May/2025 09:50:39] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-05-08 09:51:37,208 - INFO - 127.0.0.1 - - [08/May/2025 09:51:37] "OPTIONS /predict HTTP/1.1" 200 -
+2025-05-08 10:05:18,014 - INFO -  * Detected change in 'D:\\Ip @\\app.py', reloading
+2025-05-08 10:05:18,844 - INFO -  * Restarting with stat
