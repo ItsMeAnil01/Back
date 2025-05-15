@@ -3995,3 +3995,5 @@ elopment server. Do not use it in a production deployment. Use a production WSGI
 2025-05-15 12:42:31,974 - INFO - Received input: {'age': 70, 'sex': 1, 'cp': 2, 'trestbps': 150, 'chol': 260, 'fbs': 0, 'restecg': 1, 'thalach': 130, 'exang': 1, 'oldpeak': 1.8, 'slope': 1, 'ca': 1, 'thal': 2}
 2025-05-15 12:42:32,127 - INFO - Prediction: {'Heart Attack Risk': '55.94%'}
 2025-05-15 12:42:32,127 - INFO - 127.0.0.1 - - [15/May/2025 12:42:32] "POST /predict HTTP/1.1" 200 -
+2025-05-15 12:55:00,311 - INFO -  * Detected change in 'D:\\Ip @\\app.py', reloading
+2025-05-15 12:55:01,162 - INFO -  * Restarting with stat
