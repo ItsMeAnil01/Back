@@ -3997,3 +3997,102 @@ elopment server. Do not use it in a production deployment. Use a production WSGI
 2025-05-15 12:42:32,127 - INFO - 127.0.0.1 - - [15/May/2025 12:42:32] "POST /predict HTTP/1.1" 200 -
 2025-05-15 12:55:00,311 - INFO -  * Detected change in 'D:\\Ip @\\app.py', reloading
 2025-05-15 12:55:01,162 - INFO -  * Restarting with stat
+2025-05-15 12:58:42,271 - WARNING - Incompatible model version: expected 1.0.0, got unknown
+2025-05-15 12:58:42,271 - INFO - Model and scaler loaded successfully. Model type: VotingClassifier, Version: unknown
+2025-05-15 12:58:42,273 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-05-15 12:58:42,313 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-15 12:58:42,313 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-15 12:58:42,316 - INFO -  * Restarting with stat
+2025-05-15 12:58:48,412 - WARNING - Incompatible model version: expected 1.0.0, got unknown
+2025-05-15 12:58:48,412 - INFO - Model and scaler loaded successfully. Model type: VotingClassifier, Version: unknown
+2025-05-15 12:58:48,413 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-05-15 12:58:48,431 - WARNING -  * Debugger is active!
+2025-05-15 12:58:48,463 - INFO -  * Debugger PIN: 139-950-080
+2025-05-15 13:10:56,012 - WARNING - Incompatible model version: expected 1.0.0, got unknown
+2025-05-15 13:10:56,013 - INFO - Model and scaler loaded successfully. Model type: VotingClassifier, Version: unknown
+2025-05-15 13:10:56,014 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-05-15 13:10:56,051 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-15 13:10:56,051 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-15 13:10:56,054 - INFO -  * Restarting with stat
+2025-05-15 13:11:00,752 - WARNING - Incompatible model version: expected 1.0.0, got unknown
+2025-05-15 13:11:00,753 - INFO - Model and scaler loaded successfully. Model type: VotingClassifier, Version: unknown
+2025-05-15 13:11:00,754 - INFO - Starting Flask server on http://127.0.0.1:5000
+2025-05-15 13:11:00,775 - WARNING -  * Debugger is active!
+2025-05-15 13:11:00,779 - INFO -  * Debugger PIN: 139-950-080
+2025-05-15 13:11:03,801 - INFO - Received input: {'age': 30, 'sex': 1, 'cp': 0, 'trestbps': 110, 'chol': 180, 'fbs': 0, 'restecg': 0, 'thalach': 170, 'exang': 0, 'oldpeak': 0, 'slope': 0, 'ca': 0, 'thal': 0}
+2025-05-15 13:11:04,090 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:04,091 - INFO - 127.0.0.1 - - [15/May/2025 13:11:04] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:04,096 - INFO - Received input: {'age': 28, 'sex': 0, 'cp': 0, 'trestbps': 100, 'chol': 160, 'fbs': 0, 'restecg': 0, 'thalach': 175, 'exang': 0, 'oldpeak': 0, 'slope': 0, 'ca': 0, 'thal': 0}
+2025-05-15 13:11:04,241 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:04,242 - INFO - 127.0.0.1 - - [15/May/2025 13:11:04] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:04,247 - INFO - Received input: {'age': 40, 'sex': 1, 'cp': 0, 'trestbps': 120, 'chol': 200, 'fbs': 0, 'restecg': 0, 'thalach': 160, 'exang': 0, 'oldpeak': 0, 'slope': 0, 'ca': 0, 'thal': 0}
+2025-05-15 13:11:04,389 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:04,390 - INFO - 127.0.0.1 - - [15/May/2025 13:11:04] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:04,396 - INFO - Received input: {'age': 50, 'sex': 0, 'cp': 0, 'trestbps': 115, 'chol': 190, 'fbs': 0, 'restecg': 0, 'thalach': 165, 'exang': 0, 'oldpeak': 0, 'slope': 0, 'ca': 0, 'thal': 0}
+2025-05-15 13:11:04,539 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:04,539 - INFO - 127.0.0.1 - - [15/May/2025 13:11:04] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:04,544 - INFO - Received input: {'age': 25, 'sex': 1, 'cp': 0, 'trestbps': 105, 'chol': 170, 'fbs': 0, 'restecg': 0, 'thalach': 180, 'exang': 0, 'oldpeak': 0, 'slope': 0, 'ca': 0, 'thal': 0}
+2025-05-15 13:11:04,699 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:04,700 - INFO - 127.0.0.1 - - [15/May/2025 13:11:04] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:04,706 - INFO - Received input: {'age': 45, 'sex': 1, 'cp': 1, 'trestbps': 130, 'chol': 220, 'fbs': 0, 'restecg': 1, 'thalach': 150, 'exang': 0, 'oldpeak': 0.5, 'slope': 1, 'ca': 0, 'thal': 2}
+2025-05-15 13:11:04,868 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:04,868 - INFO - 127.0.0.1 - - [15/May/2025 13:11:04] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:04,874 - INFO - Received input: {'age': 55, 'sex': 1, 'cp': 0, 'trestbps': 140, 'chol': 240, 'fbs': 0, 'restecg': 0, 'thalach': 145, 'exang': 0, 'oldpeak': 1.0, 'slope': 1, 'ca': 0, 'thal': 2}
+2025-05-15 13:11:05,031 - INFO - Prediction: {'Heart Attack Risk': '3.84%'}
+2025-05-15 13:11:05,031 - INFO - 127.0.0.1 - - [15/May/2025 13:11:05] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:05,036 - INFO - Received input: {'age': 50, 'sex': 0, 'cp': 2, 'trestbps': 135, 'chol': 260, 'fbs': 0, 'restecg': 1, 'thalach': 140, 'exang': 0, 'oldpeak': 0.8, 'slope': 1, 'ca': 0, 'thal': 2}
+2025-05-15 13:11:05,189 - INFO - Prediction: {'Heart Attack Risk': '0.14%'}
+2025-05-15 13:11:05,189 - INFO - 127.0.0.1 - - [15/May/2025 13:11:05] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:05,194 - INFO - Received input: {'age': 48, 'sex': 1, 'cp': 2, 'trestbps': 125, 'chol': 230, 'fbs': 0, 'restecg': 1, 'thalach': 135, 'exang': 1, 'oldpeak': 1.2, 'slope': 1, 'ca': 1, 'thal': 2}
+2025-05-15 13:11:05,349 - INFO - Prediction: {'Heart Attack Risk': '34.61%'}
+2025-05-15 13:11:05,349 - INFO - 127.0.0.1 - - [15/May/2025 13:11:05] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:05,355 - INFO - Received input: {'age': 60, 'sex': 1, 'cp': 0, 'trestbps': 145, 'chol': 250, 'fbs': 0, 'restecg': 2, 'thalach': 130, 'exang': 0, 'oldpeak': 1.5, 'slope': 1, 'ca': 0, 'thal': 2}
+2025-05-15 13:11:05,509 - INFO - Prediction: {'Heart Attack Risk': '22.40%'}
+2025-05-15 13:11:05,510 - INFO - 127.0.0.1 - - [15/May/2025 13:11:05] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:05,514 - INFO - Received input: {'age': 65, 'sex': 1, 'cp': 3, 'trestbps': 160, 'chol': 280, 'fbs': 1, 'restecg': 2, 'thalach': 120, 'exang': 1, 'oldpeak': 2.0, 'slope': 2, 'ca': 2, 'thal': 3}
+2025-05-15 13:11:05,658 - INFO - Prediction: {'Heart Attack Risk': '88.07%'}
+2025-05-15 13:11:05,659 - INFO - 127.0.0.1 - - [15/May/2025 13:11:05] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:05,664 - INFO - Received input: {'age': 70, 'sex': 1, 'cp': 3, 'trestbps': 170, 'chol': 300, 'fbs': 1, 'restecg': 2, 'thalach': 115, 'exang': 1, 'oldpeak': 2.5, 'slope': 2, 'ca': 3, 'thal': 3}
+2025-05-15 13:11:05,809 - INFO - Prediction: {'Heart Attack Risk': '89.11%'}
+2025-05-15 13:11:05,810 - INFO - 127.0.0.1 - - [15/May/2025 13:11:05] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:05,815 - INFO - Received input: {'age': 62, 'sex': 0, 'cp': 3, 'trestbps': 155, 'chol': 290, 'fbs': 1, 'restecg': 2, 'thalach': 125, 'exang': 1, 'oldpeak': 2.2, 'slope': 2, 'ca': 2, 'thal': 3}
+2025-05-15 13:11:05,958 - INFO - Prediction: {'Heart Attack Risk': '76.94%'}
+2025-05-15 13:11:05,958 - INFO - 127.0.0.1 - - [15/May/2025 13:11:05] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:05,963 - INFO - Received input: {'age': 68, 'sex': 1, 'cp': 3, 'trestbps': 165, 'chol': 310, 'fbs': 1, 'restecg': 2, 'thalach': 110, 'exang': 1, 'oldpeak': 3.0, 'slope': 2, 'ca': 3, 'thal': 3}
+2025-05-15 13:11:06,098 - INFO - Prediction: {'Heart Attack Risk': '89.26%'}
+2025-05-15 13:11:06,099 - INFO - 127.0.0.1 - - [15/May/2025 13:11:06] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:06,104 - INFO - Received input: {'age': 55, 'sex': 1, 'cp': 3, 'trestbps': 150, 'chol': 270, 'fbs': 1, 'restecg': 1, 'thalach': 130, 'exang': 1, 'oldpeak': 1.8, 'slope': 2, 'ca': 2, 'thal': 3}
+2025-05-15 13:11:06,245 - INFO - Prediction: {'Heart Attack Risk': '80.02%'}
+2025-05-15 13:11:06,245 - INFO - 127.0.0.1 - - [15/May/2025 13:11:06] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:06,249 - INFO - Received input: {'age': 20, 'sex': 1, 'cp': 0, 'trestbps': 110, 'chol': 300, 'fbs': 0, 'restecg': 0, 'thalach': 180, 'exang': 0, 'oldpeak': 0, 'slope': 0, 'ca': 0, 'thal': 0}
+2025-05-15 13:11:06,386 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:06,386 - INFO - 127.0.0.1 - - [15/May/2025 13:11:06] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:06,391 - INFO - Received input: {'age': 75, 'sex': 1, 'cp': 0, 'trestbps': 120, 'chol': 200, 'fbs': 0, 'restecg': 0, 'thalach': 140, 'exang': 0, 'oldpeak': 0, 'slope': 0, 'ca': 0, 'thal': 0}
+2025-05-15 13:11:06,529 - INFO - Prediction: {'Heart Attack Risk': '9.00%'}
+2025-05-15 13:11:06,529 - INFO - 127.0.0.1 - - [15/May/2025 13:11:06] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:06,534 - INFO - Received input: {'age': 35, 'sex': 1, 'cp': 3, 'trestbps': 130, 'chol': 220, 'fbs': 0, 'restecg': 0, 'thalach': 160, 'exang': 1, 'oldpeak': 1.0, 'slope': 1, 'ca': 0, 'thal': 2}
+2025-05-15 13:11:06,677 - INFO - Prediction: {'Heart Attack Risk': '1.09%'}
+2025-05-15 13:11:06,677 - INFO - 127.0.0.1 - - [15/May/2025 13:11:06] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:06,682 - INFO - Received input: {'age': 50, 'sex': 0, 'cp': 0, 'trestbps': 140, 'chol': 250, 'fbs': 1, 'restecg': 1, 'thalach': 135, 'exang': 0, 'oldpeak': 1.5, 'slope': 1, 'ca': 1, 'thal': 2}
+2025-05-15 13:11:06,857 - INFO - Prediction: {'Heart Attack Risk': '9.03%'}
+2025-05-15 13:11:06,858 - INFO - 127.0.0.1 - - [15/May/2025 13:11:06] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:06,865 - INFO - Received input: {'age': 80, 'sex': 1, 'cp': 3, 'trestbps': 180, 'chol': 320, 'fbs': 1, 'restecg': 2, 'thalach': 100, 'exang': 1, 'oldpeak': 3.5, 'slope': 2, 'ca': 4, 'thal': 3}
+2025-05-15 13:11:07,023 - INFO - Prediction: {'Heart Attack Risk': '88.78%'}
+2025-05-15 13:11:07,024 - INFO - 127.0.0.1 - - [15/May/2025 13:11:07] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:07,030 - INFO - Received input: {'age': 60, 'sex': 1, 'cp': 3, 'trestbps': 100, 'chol': 280, 'fbs': 1, 'restecg': 2, 'thalach': 120, 'exang': 1, 'oldpeak': 2.0, 'slope': 2, 'ca': 2, 'thal': 3}
+2025-05-15 13:11:07,181 - INFO - Prediction: {'Heart Attack Risk': '84.90%'}
+2025-05-15 13:11:07,181 - INFO - 127.0.0.1 - - [15/May/2025 13:11:07] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:07,187 - INFO - Received input: {'age': 55, 'sex': 1, 'cp': 3, 'trestbps': 150, 'chol': 270, 'fbs': 1, 'restecg': 2, 'thalach': 170, 'exang': 1, 'oldpeak': 2.0, 'slope': 2, 'ca': 2, 'thal': 3}
+2025-05-15 13:11:07,337 - INFO - Prediction: {'Heart Attack Risk': '63.46%'}
+2025-05-15 13:11:07,338 - INFO - 127.0.0.1 - - [15/May/2025 13:11:07] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:07,343 - INFO - Received input: {'age': 30, 'sex': 1, 'cp': 0, 'trestbps': 120, 'chol': 200, 'fbs': 0, 'restecg': 2, 'thalach': 160, 'exang': 0, 'oldpeak': 0.5, 'slope': 1, 'ca': 0, 'thal': 2}
+2025-05-15 13:11:07,499 - INFO - Prediction: {'Heart Attack Risk': '0.00%'}
+2025-05-15 13:11:07,499 - INFO - 127.0.0.1 - - [15/May/2025 13:11:07] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:07,504 - INFO - Received input: {'age': 45, 'sex': 1, 'cp': 0, 'trestbps': 130, 'chol': 400, 'fbs': 0, 'restecg': 0, 'thalach': 150, 'exang': 0, 'oldpeak': 1.0, 'slope': 1, 'ca': 1, 'thal': 2}
+2025-05-15 13:11:07,660 - INFO - Prediction: {'Heart Attack Risk': '12.84%'}
+2025-05-15 13:11:07,660 - INFO - 127.0.0.1 - - [15/May/2025 13:11:07] "POST /predict HTTP/1.1" 200 -
+2025-05-15 13:11:07,666 - INFO - Received input: {'age': 70, 'sex': 1, 'cp': 2, 'trestbps': 150, 'chol': 260, 'fbs': 0, 'restecg': 1, 'thalach': 130, 'exang': 1, 'oldpeak': 1.8, 'slope': 1, 'ca': 1, 'thal': 2}
+2025-05-15 13:11:07,847 - INFO - Prediction: {'Heart Attack Risk': '55.94%'}
+2025-05-15 13:11:07,847 - INFO - 127.0.0.1 - - [15/May/2025 13:11:07] "POST /predict HTTP/1.1" 200 -
